@@ -117,9 +117,9 @@ public class GWTProjectEntryPoint implements EntryPoint {
         String href = $(e).attr("href");
 
         //do not load javadoc async
-        if(href.contains("/gxt/javadoc/")) {
-          return true;
-        }
+        // if(href.contains("/TODO/javadoc/")) {
+        // return true;
+        // }
 
         if (isPushstateCapable && isSameOriginRexp.test(href)) {
           loadPage(href);

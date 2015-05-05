@@ -1,0 +1,16 @@
+<assembly>
+  <id>generated-site</id>
+  <includeBaseDirectory>false</includeBaseDirectory>
+  <formats>
+    <format>zip</format>
+  </formats>
+  <fileSets>
+    <fileSet>
+      <directory>target/generated-site</directory>
+      <includes>
+        <include>**/*</include>
+      </includes>
+      <outputDirectory></outputDirectory>
+    </fileSet>
+  </fileSets>
+</assembly>

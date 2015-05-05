@@ -23,11 +23,11 @@
       </script>
       <gcse:searchbox-only></gcse:searchbox-only>
     </div>
-    <h1><a href="">GWT Plugins</a></h1>
+    <h1><a href="">Documentation</a></h1>
   </div>
 
   <div class="gwt-wrap">
-    <table cellpadding=0 cellspacing=0 width=100%>
+    <table cellpadding=0 cellspacing=0 width="100%" height="100%">
       <tr>
         <td id="gwt-toc-wrap" valign="top"><div id="gwt-toc">
           $toc

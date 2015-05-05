@@ -20,6 +20,7 @@ body, p {
 }
 
 #header {
+	background: #000000;
 	padding-left: 30px;
 	left: 0;
 	position: fixed;

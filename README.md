@@ -11,3 +11,7 @@
 ## Upload
 
 * `mvn install`
+
+## Build Server
+
+[Team City Build Server](http://gwt-eclipse-plugin.github.io/gwt-eclipse-plugin/)

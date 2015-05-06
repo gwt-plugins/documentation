@@ -1,4 +1,11 @@
 # Download
+Download the GWT Eclipse Plugin
+
+
+## Warning - Do not install this with your current installation
+The current release is a preview, which means try at your own peril.
+It is recommended at this time to install this in a clean Eclipse install.  
+
 
 ## Available Features
 

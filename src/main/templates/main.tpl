@@ -11,7 +11,7 @@
     <div class="google-search">
       <script>
         (function() {
-          var cx = '011138278718949652927:viqvzkunlqg';
+          var cx = '011138278718949652927:g-vjyw-9k8u';
           var gcse = document.createElement('script');
           gcse.type = 'text/javascript';
           gcse.async = true;

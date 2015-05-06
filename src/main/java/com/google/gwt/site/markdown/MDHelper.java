@@ -32,6 +32,7 @@ public class MDHelper {
   private File outputDirectoryFile;
   private String template;
   private Map<String, String> javadocsLinks;
+  private int relativeSiteDepth;
 
   public MDHelper setSourceDirectory(String sourceDirectory) {
     this.sourceDirectory = sourceDirectory;
@@ -111,11 +112,30 @@ public class MDHelper {
     if (!created) {
       throw new IllegalStateException();
     }
+    
+    relativeSiteDepth = calculateRelativeSiteDepth();
 
     FileSystemTraverser traverser = new FileSystemTraverser();
     MDParent mdRoot = traverser.traverse(sourceDirectoryFile);
 
-    new MDTranslater(new TocCreator(), new MarkupWriter(outputDirectoryFile), template, javadocsLinks).render(mdRoot);
+    new MDTranslater(new TocCreator(), new MarkupWriter(outputDirectoryFile), template, javadocsLinks, this).render(mdRoot);
+  }
+
+  /**
+   * Calculate distance from root. Relative base site depth, for templateFileContent source links.
+   */
+  private int calculateRelativeSiteDepth() {
+    String output = outputDirectory.replaceFirst("/$", "");
+    String site = output.replaceAll(".*?/generated-site", "");
+    String countSlash = site.replaceAll("[^/]", "");
+    if (countSlash == null) {
+      countSlash = "";
+    }
+    return countSlash.length();
+  }
+
+  public int getRelativeSiteDepth() {
+    return relativeSiteDepth;
   }
 
 }

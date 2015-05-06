@@ -23,6 +23,7 @@
       </script>
       <gcse:searchbox-only></gcse:searchbox-only>
     </div>
+    <img class="logo" src="$baseUrl/images/logo.png"/>
     <h1>GWT IDE Documentation</h1>
   </div>
 

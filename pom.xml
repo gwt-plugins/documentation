@@ -29,6 +29,9 @@
       <resource>
         <directory>src/main/site</directory>
       </resource>
+      <resource>
+        <directory>src/main/templates</directory>
+      </resource>
     </resources>
 
     <plugins>
@@ -57,7 +60,7 @@
               <arguments>
                 <argument>${basedir}/src/main/markdown/main/</argument>
                 <argument>${basedir}/target/generated-site/</argument>
-                <argument>${basedir}/src/main/resources/main.tpl</argument>
+                <argument>${basedir}/src/main/templates/main.tpl</argument>
               </arguments>
             </configuration>
           </execution>

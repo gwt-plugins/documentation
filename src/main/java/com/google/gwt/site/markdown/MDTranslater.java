@@ -32,19 +32,19 @@ public class MDTranslater {
    */
   int options = Extensions.ALL - Extensions.HARDWRAPS;
   private PegDownProcessor pegDownProcessor = new PegDownProcessor(options, Long.MAX_VALUE);
-
+  
   private final TocCreator tocCreator;
-
   private final MarkupWriter writer;
-
   private final String template;
-
   private Map<String, String> links;
+  private MDHelper mdHelper;
 
-  public MDTranslater(TocCreator tocCreator, MarkupWriter writer, String template, Map<String, String> javadocsLinks) {
+  public MDTranslater(TocCreator tocCreator, MarkupWriter writer, String template, Map<String, String> javadocsLinks,
+      MDHelper mdHelper) {
     this.tocCreator = tocCreator;
     this.writer = writer;
     this.template = template;
+    this.mdHelper = mdHelper;
 
     if (javadocsLinks != null) {
       links = javadocsLinks;
@@ -57,33 +57,42 @@ public class MDTranslater {
 
   private void renderTree(MDNode node, MDParent root) throws TranslaterException {
     if (node.isFolder()) {
-      MDParent mdParent = node.asFolder();
-
-      List<MDNode> children = mdParent.getChildren();
-      for (MDNode mdNode : children) {
-        renderTree(mdNode, root);
-      }
-
-      if (mdParent.isImageDirs()) {
-        writer.copyImageDirs(mdParent);
-      }
+     renderFolder(node, root);
     } else {
-      String markDown = getNodeContent(node.getPath());
+     renderFile(node, root);
+    }
+  }
 
-      String htmlMarkDown = pegDownProcessor.markdownToHtml(markDown, new JavaDocLinkRenderer(links, node.getDepth()));
+  private void renderFile(MDNode node, MDParent root) throws TranslaterException {
+    String markDown = getNodeContent(node.getPath());
 
-      String toc = tocCreator.createTocForNode(root, node);
+    String htmlMarkDown = pegDownProcessor.markdownToHtml(markDown, new JavaDocLinkRenderer(links, node.getDepth()));
 
-      String head = createHeadForNode(node);
-      
-      // TODO should I make this a pom var and include product name
-      String title = node.getDisplayName();
+    String toc = tocCreator.createTocForNode(root, node);
 
-      String html = fillTemplate(htmlMarkDown, toc, head, title);
-      
-      html = addPrettify(html);
+    String head = createHeadForNode(node);
+    
+    // TODO should I make this a pom var and include product name
+    String title = node.getDisplayName();
 
-      writer.writeHTML(node, html);
+    String html = fillTemplate(htmlMarkDown, toc, head, title);
+    
+    html = addPrettify(html);
+    html = addBaseUrls(node, html);
+
+    writer.writeHTML(node, html);
+  }
+
+  private void renderFolder(MDNode node, MDParent root) throws TranslaterException {
+    MDParent mdParent = node.asFolder();
+
+    List<MDNode> children = mdParent.getChildren();
+    for (MDNode mdNode : children) {
+      renderTree(mdNode, root);
+    }
+
+    if (mdParent.isImageDirs()) {
+      writer.copyImageDirs(mdParent);
     }
   }
 
@@ -137,5 +146,17 @@ public class MDTranslater {
       throw new TranslaterException("can not load content from file: '" + path + "'", e1);
     }
   }
+  
+  private String addBaseUrls(MDNode node, String html) {
+    String baseUrl = getBaseUrlWithOutLastSlash(node);
+    html = html.replaceAll("\\$baseUrl", baseUrl);
+    return html;
+  }
 
+  private String getBaseUrlWithOutLastSlash(MDNode node) {
+    String baseUrl = Util.getBaseUrl(mdHelper.getRelativeSiteDepth(), node);
+    baseUrl = baseUrl.replaceFirst("/$", "");
+    return baseUrl;
+  }
+  
 }

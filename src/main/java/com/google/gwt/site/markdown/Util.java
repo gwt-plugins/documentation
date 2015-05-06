@@ -13,14 +13,17 @@
  */
 package com.google.gwt.site.markdown;
 
-import org.apache.commons.io.IOUtils;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+import org.apache.commons.io.IOUtils;
+
+import com.google.gwt.site.markdown.fs.MDNode;
+
 public class Util {
+
   public static String getStringFromFile(File file) throws IOException {
     FileInputStream fileInputStream = null;
     try {
@@ -40,4 +43,32 @@ public class Util {
       IOUtils.closeQuietly(fileOutputStream);
     }
   }
+
+  /**
+   * Resource path depth from markdown. Url path depth from root.<br/>
+   * Example: $baseUrlnode.html to ../../../node.html
+   * 
+   * @param relativeSiteDepth
+   *          - site depth to resources
+   * @param node
+   *          - node being used to calculate its depth
+   */
+  public static String getBaseUrl(int relativeSiteDepth, MDNode node) {
+    int depth = node.getDepth();
+
+    StringBuffer pathBuffer = new StringBuffer();
+
+    depth += relativeSiteDepth;
+
+    pathBuffer.append("./");
+
+    for (int i = 1; i < depth; i++) {
+      pathBuffer.append("../");
+    }
+
+    String baseUrl = pathBuffer.toString();
+
+    return baseUrl;
+  }
+
 }

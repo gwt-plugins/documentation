@@ -2,7 +2,7 @@
 
 ## Build Site
 
-* `mvn clean package`
+* `mvn package`
 
 ## Testing
 

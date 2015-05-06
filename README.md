@@ -1,5 +1,7 @@
 # GWT Eclipse Documentation
 
+* [Documentation Home](http://gwt-eclipse-plugin.github.io/gwt-eclipse-plugin/ )
+
 ## Build Site
 
 * `mvn package`

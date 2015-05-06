@@ -2,4 +2,12 @@
 
 ## Build Site
 
-* `mvn clean install`
+* `mvn clean package`
+
+## Testing
+
+* `mvn jetty:run`
+
+## Upload
+
+* `mvn install`

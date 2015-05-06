@@ -3,6 +3,7 @@
   <toc>
     <entries>
       <entry name="index" displayName="Home" description="Home"></entry>
+      <entry name="eclipse/" displayName="Eclipse" description="Eclipse"></entry>
     </entries>
   </toc>
 </folder>

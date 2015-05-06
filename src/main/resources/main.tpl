@@ -23,7 +23,7 @@
       </script>
       <gcse:searchbox-only></gcse:searchbox-only>
     </div>
-    <h1><a href="">Documentation</a></h1>
+    <h1>GWT IDE Documentation</h1>
   </div>
 
   <div class="gwt-wrap">
@@ -54,7 +54,6 @@
 	
 	  ga('create', 'UA-62291716-2', 'auto');
 	  ga('send', 'pageview');
-	
 	</script>
 
   <!-- Google+ -->

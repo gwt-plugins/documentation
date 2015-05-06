@@ -162,22 +162,16 @@
       </plugin> -->
 
       <!-- Server for running tests *TestInt.java -->
-      <!-- 'mvn jetty:run' deploys and starts -->
-      <!-- mvn jetty:start -->
-      <!-- mvn jetty:stop -->
-      <!-- mvn jetty:run -->
-      <!-- mvn 'integration-test -Pintegration-test' runs integration tests -->
-      <!-- <plugin>
-        <groupId>org.mortbay.jetty</groupId>
+      <!-- 'mvn jetty:run' -->
+      <plugin>
+        <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-maven-plugin</artifactId>
-        <version>8.1.9.v20130131</version>
+        <version>9.3.0.M2</version>
         <configuration>
           <scanIntervalSeconds>10</scanIntervalSeconds>
-          <stopPort>9966</stopPort>
-          <stopKey>stop-jetty</stopKey>
           <webAppSourceDirectory>${project.build.directory}/generated-site</webAppSourceDirectory>
         </configuration>
-        <executions>
+        <!-- <executions>
           <execution>
             <id>start-jetty</id>
             <phase>pre-integration-test</phase>
@@ -196,8 +190,8 @@
               <goal>stop</goal>
             </goals>
           </execution>
-        </executions>
-      </plugin> -->
+        </executions> -->
+      </plugin>
 
       <!-- Gihub Upload -->
       <!-- run 'mvn site' to upload -->

@@ -1,6 +1,10 @@
 # Classic Dev Mode
-Classic Dev Mode launchers use a process OOHPM to connect to the browser. 
-This process is no longer supported in the modern browsers.
+Classic Dev Mode is used to launch a process which compiles the application, 
+run a web server and uses a process OOHPM to connect to the browser. 
+
+The OOPHM process is no longer supported in the modern browsers.
+
+DevMode can also run Super Dev Mode with a flag.  
 
 
 ## Reference

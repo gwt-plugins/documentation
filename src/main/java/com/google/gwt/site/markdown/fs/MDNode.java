@@ -14,17 +14,17 @@
 package com.google.gwt.site.markdown.fs;
 
 public class MDNode {
+
   private final String name;
   private final MDParent parent;
   private final String path;
-
   private String description;
   private final int depth;
   private final String relativePath;
+  private boolean excludeFromToc;
+  private boolean expand;
 
   protected String displayName;
-
-  private boolean excludeFromToc;
 
   public MDNode(MDParent parent, String name, String path, int depth, String relativePath) {
     this.parent = parent;
@@ -77,7 +77,8 @@ public class MDNode {
   }
 
   /**
-   * @param displayName the displayName to set
+   * @param displayName
+   *          the displayName to set
    */
   public void setDisplayName(String displayName) {
     this.displayName = displayName;
@@ -87,7 +88,8 @@ public class MDNode {
    * @return the displayName
    */
   public String getDisplayName() {
-    if (displayName == null) return getName().substring(0, getName().length() - ".md".length());
+    if (displayName == null)
+      return getName().substring(0, getName().length() - ".md".length());
     return displayName;
   }
 
@@ -98,4 +100,13 @@ public class MDNode {
   public boolean isExcludeFromToc() {
     return excludeFromToc;
   }
+
+  public boolean isExpand() {
+    return expand;
+  }
+
+  public void setExpand(boolean expand) {
+    this.expand = expand;
+  }
+
 }

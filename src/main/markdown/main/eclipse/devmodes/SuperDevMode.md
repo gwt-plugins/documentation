@@ -1,5 +1,7 @@
 # Super Dev Mode
-Super Dev Mode is used to run and debug applications in the modern browsers and mobile devices. 
+Super Dev Mode is used to launch a process to compile the application and source maps for modern browsers. 
+A server will be needed to launch with this process. 
+Such as Dev Mode built in Jetty for the web server.  
 
 
 ## Reference
@@ -42,25 +44,25 @@ Use the `-bindAddress 0.0.0.0` to bind on every IP.
 
 
 ## Launching
-There is more than one way to run Super Dev Mode. 
+There is more than one way to launch Super Dev Mode. 
 Super Dev Mode can launched using the DevMode or CodeServer entry points.
 
 <img src="images/superdevmodes.png" /> 
 
 
-### Launching Super DevMode with DevMode
+### Launching Super Dev Mode with DevMode
 Using the DevMode entry point to launch Super Dev Mode. 
 
 * [Super Dev Mode using DevMode](./superdevmode/SuperDevMode-DevMode.html)
 
 
-### Launching Super DevMode with the CodeServer
+### Launching Super Dev Mode with the CodeServer
 Using the CodeServer entry point to launch Super Dev Mode.
 
 * [Super Dev Mode using the CodeServer](./superdevmode/SuperDevMode-CodeServer.html)
 
 
-### Launching Super DevMode with Maven
+### Launching Super Dev Mode with Maven
 Using maven to start Super Dev Mode
 
 * [Super Dev Mode using Codehause Maven Plugin](./superdevmode/maven/maven-codehaus.html)

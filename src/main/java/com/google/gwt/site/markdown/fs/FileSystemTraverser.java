@@ -67,11 +67,14 @@ public class FileSystemTraverser {
     private String name;
     private String displayName;
     private String description;
+    private boolean expand;
 
-    public Entry(String name, String displayName, String description) {
+    public Entry(String name, String displayName, String description, String expand) {
       this.name = name;
       this.displayName = displayName;
       this.description = description;
+      
+      setExpand(expand);
     }
 
     public String getDescription() {
@@ -84,6 +87,21 @@ public class FileSystemTraverser {
 
     public String getName() {
       return name;
+    }
+    
+    private void setExpand(String expand) {
+      if (expand == null) {
+        this.expand = false;
+      } else {
+        try {
+          this.expand = Boolean.valueOf(expand.trim());
+        } catch (Exception e) {
+        }
+      }
+    }
+
+    public boolean isExpand() {
+      return expand;
     }
   }
 
@@ -140,6 +158,7 @@ public class FileSystemTraverser {
             if (nameInTree.equals(node.getName())) {
               node.setDisplayName(e.getDisplayName());
               node.setDescription(e.getDescription());
+              node.setExpand(e.isExpand());
               break;
             }
 
@@ -308,7 +327,8 @@ public class FileSystemTraverser {
       String name = entryNode.getAttribute("name");
       String displayName = entryNode.getAttribute("displayName");
       String description = entryNode.getAttribute("description");
-      list.add(new Entry(name, displayName, description));
+      String expand = entryNode.getAttribute("expand");
+      list.add(new Entry(name, displayName, description, expand));
     }
     return list;
   }

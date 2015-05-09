@@ -4,6 +4,9 @@
     <entries>
       <entry name="Download" displayName="Download" description="Download"></entry>
       <entry name="GettingStarted" displayName="Getting Started" description="Getting Started"></entry>
+      <entry name="devmodes/" displayName="Dev Modes" description="Dev Modes"></entry>
+      <entry name="maven/" displayName="Maven" description="Maven"></entry>
+      <entry name="servers/" displayName="Servers" description="Servers"></entry>
     </entries>
   </toc>
 </folder>

@@ -1,1 +1,39 @@
 # Tomcat
+
+
+## Maven
+
+* Tomcat plugin
+
+		<!-- http://tomcat.apache.org/maven-plugin-2.2/context-goals.html - goals -->
+		<plugin>
+		  <groupId>org.apache.tomcat.maven</groupId>
+		  <artifactId>tomcat7-maven-plugin</artifactId>
+		  <version>2.2</version>
+		  <configuration>
+		    <webappDirectory>src/main/webapp</webappDirectory>
+		  </configuration>
+		</plugin>
+
+
+## Project
+
+* [Example Project](https://github.com/branflake2267/Archetypes/tree/master/archetypes/gwt-basic-rpc-tomcat)
+
+## Archetype
+
+* Example Archetype
+
+		mvn archetype:generate -DarchetypeGroupId=com.github.branflake2267.archetypes \
+		-DarchetypeRepository=https://oss.sonatype.org/content/repositories/snapshots \
+		-DarchetypeArtifactId=gwt-basic-rpc-tomcat-archetype \
+		-DarchetypeVersion=1.0-SNAPSHOT \
+		-DgroupId=com.projectname.project \
+		-DartifactId=new-project-name \
+		-Dmodule=Project
+
+
+## Launching
+Using and launching the Tomcat server runtime.
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/d6xsX9x9WC4" frameborder="0" allowfullscreen></iframe>

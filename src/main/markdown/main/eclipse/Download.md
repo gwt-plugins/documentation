@@ -21,6 +21,9 @@ Uninstall GPE or Install a fresh copy of Eclipse.
 
 ## Installation
 
+<iframe width="560" height="315" src="//www.youtube.com/embed/93hN_Y9f0N0" frameborder="0" allowfullscreen></iframe>
+
+
 1. Uninstall GPE or Install a fresh copy of Eclipse
 2. Copy the update site above.
 3. Goto `Help` > `Install New Software`
@@ -37,4 +40,4 @@ Uninstall GPE or Install a fresh copy of Eclipse.
 	<img width="500px" src="images/features.png"/>
 
 ## File Issues
-If you find a bug, file the issues [here](https://github.com/gwt-eclipse-plugin/gwt-eclipse-plugin/issues).
+If you find a bug, file the issues [here](./Contributing.html).

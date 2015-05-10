@@ -11,8 +11,11 @@ Use DevMode to start the CodeServer which is Super DevMode.
 
 
 
-### Launching default
-TODO add steps
+### Launching Super Dev Mode 
+Launching Super Dev Mode using DevMode.
+  
+<img src="images/devmode-superdevmode.png" />
+
 
 
 ### Launching -server

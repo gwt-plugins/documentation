@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<folder href="index">
+  <toc>
+    <entries>
+      <entry name="Importing" displayName="Importing Existing Projects" description="Importing Existing Projects"></entry>
+      <entry name="ProjectFacets" displayName="Project Facets" description="Project Facets"></entry>
+      <entry name="ServerRuntimes" displayName="Server Runtimes" description="Server Runtimes"></entry>
+    </entries>
+  </toc>
+</folder>

@@ -52,12 +52,12 @@ There are several ways that DevMode can be used.
 
 ###1. Launching DevMode with Jetty
 
-TODO show classic launch video
+<img src="images/classicdevmode.png" />
 
 ###2. Launching DevMode with a -server
 
-TODO show appengine video
+TODO add steps
 
 ###3. Launching DevMode with a -noserver
 
-TODO show -noserver with tomcat
+TODO add steps

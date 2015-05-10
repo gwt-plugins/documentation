@@ -32,6 +32,9 @@
 		-DartifactId=new-project-name \
 		-Dmodule=Project
 
+## Installing
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/6w87lVYT-MM" frameborder="0" allowfullscreen></iframe>
 
 ## Launching
 Using and launching the Tomcat server runtime.

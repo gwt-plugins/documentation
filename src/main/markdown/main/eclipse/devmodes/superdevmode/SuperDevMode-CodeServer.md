@@ -17,6 +17,8 @@ The Code server launcher
 
 <img src="images/codeserver.png" />
 
+<img src="images/codeserver-launcher.png" />
+
 
 ### Using the App Engine Server
 
@@ -25,4 +27,8 @@ The Code server launcher
 <iframe width="560" height="315" src="//www.youtube.com/embed/SUueCocqf_U" frameborder="0" allowfullscreen></iframe>
 
 
+### Using the Tomcat Server
 
+* [More on using the Tomcat Server Runtime](../../servers/Tomcat.html)
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/d6xsX9x9WC4" frameborder="0" allowfullscreen></iframe>

@@ -21,3 +21,22 @@ Now and into the future `Super Dev Mode` is used to debug applications.
 These methods can be optional and can be configured differently.
  
 <img src="images/eclipse_gwt_dev_modes.png" />
+
+
+## Which Dev Mode
+There are many ways to debug the GWT application. 
+In general there are two potential paths. 
+The first is using DevMode entrypoint with the built in Jetty web server. 
+The second is using the CodeServer entrypoint with a custom web server. 
+
+The reason the CodeServer is a better choice, it has the launcherDir flag and allows for easier Super Dev Mode adjustments with its flags. 
+
+<img src="images/whichdevmode.png" />
+
+### Dev Mode
+
+* [More on using DevMode](./devmodes/DevMode.html)
+
+### Code Server
+
+* [More on using the CodeServer](./devmodes/SuperDevMode.html)

@@ -1,6 +1,6 @@
-# GWT Eclipse Documentation
+# GWT Plugins Documentation
 
-* [Documentation Home](http://gwt-eclipse-plugin.github.io/gwt-eclipse-plugin/ )
+* [Documentation Home](http://gwt-plugins.github.io/documentation/ )
 
 ## Build Site
 
@@ -16,4 +16,4 @@
 
 ## Build Server
 
-* [Team City Build Server](http://gwt-eclipse-plugin.github.io/gwt-eclipse-plugin/)
+* [Team City Build Server](http://gwt-plugins.github.io/gwt-eclipse-plugin/)

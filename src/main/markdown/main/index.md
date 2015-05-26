@@ -1,5 +1,5 @@
-# GWT IDE Integration
-Using an IDE to debug GWT Applications
+# GWT Plugins 
+Using Plugins debug GWT Applications
 
 ## Debugging GWT applications
 It takes three parts to debug a GWT Application

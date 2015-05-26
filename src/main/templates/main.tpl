@@ -10,7 +10,7 @@
 
   <div id="header">
     <a href="http://www.sencha.com"><img class="logo" src="$baseUrl/images/logo.png"/></a>
-    <h1 id="title">GWT IDE Documentation</h1>
+    <h1 id="title">GWT Plugins Documentation</h1>
     <div class="google-search">
     <script>
       (function() {

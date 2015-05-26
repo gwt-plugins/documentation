@@ -16,4 +16,4 @@
 
 ## Build Server
 
-* [Team City Build Server](http://gwt-plugins.github.io/gwt-eclipse-plugin/)
+* [Build Server](http://104.154.51.222/)

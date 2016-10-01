@@ -1,7 +1,13 @@
 # Tomcat
+This covers using Tomcat as a Eclipse WTP Server runtime to host the application. 
+
+## Reference
+
+* [Find out how to install the Tomcat WTP Server Adapter](http://www.vogella.com/tutorials/EclipseWTP/article.html)
 
 
 ## Maven
+Setting up maven with a Tomcat dependency.
 
 * Tomcat plugin
 
@@ -21,6 +27,7 @@
 * [Example Project](https://github.com/branflake2267/Archetypes/tree/master/archetypes/gwt-basic-rpc-tomcat)
 
 ## Archetype
+Creating a project from a template with Tomcat. 
 
 * Example Archetype
 

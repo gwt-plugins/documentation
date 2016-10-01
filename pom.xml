@@ -16,9 +16,9 @@
   </properties>
 
   <scm>
-    <connection>scm:git:https://github.com/gwt-eclipse-plugin/gwt-eclipse-plugin.git</connection>
-    <developerConnection>scm:git:https://github.com/gwt-eclipse-plugin/gwt-eclipse-plugin.git</developerConnection>
-    <url>https://github.com/gwt-eclipse-plugin/gwt-eclipse-plugin.git</url>
+    <connection>scm:git:https://github.com/gwt-plugins/documentation.git</connection>
+    <developerConnection>scm:git:https://github.com/gwt-plugins/documentation.git</developerConnection>
+    <url>https://github.com/gwt-plugins/documentation.git</url>
   </scm>
 
   <build>
@@ -204,15 +204,16 @@
         <artifactId>site-maven-plugin</artifactId>
         <version>0.11</version>
         <configuration>
-          <!-- <dryRun>true</dryRun> -->
+          <dryRun>false</dryRun>
           <message>Creating site for ${project.version}</message>
           <!-- github > sets the ~/.m2/setting.xml server id profile -->
           <server>github</server>
           <outputDirectory>${project.build.directory}/generated-site</outputDirectory>
           <force>true</force>
           <merge>true</merge>
-          <repositoryName>gwt-eclipse-plugin</repositoryName>
-          <repositoryOwner>gwt-eclipse-plugin</repositoryOwner>
+          <!-- https://github.com/gwt-plugins/documentation.git -->
+          <repositoryName>documentation</repositoryName>
+          <repositoryOwner>gwt-plugins</repositoryOwner>
         </configuration>
         <executions>
           <execution>

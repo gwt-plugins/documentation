@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<folder href="index">
+  <toc>
+    <entries>
+      <entry name="DevMode" displayName="DevMode"></entry>
+      <entry name="CodeServer" displayName="CodeServer"></entry>
+    </entries>
+  </toc>
+</folder>

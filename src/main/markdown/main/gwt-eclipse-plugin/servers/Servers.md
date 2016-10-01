@@ -8,6 +8,3 @@ Choosing an application server.
 ## Tomcat
 
 * [Using the Tomcat Server Runtime](./Tomcat.html)
-
-## More
-TODO

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<folder href="index">
-  <toc>
-    <entries>
-      <entry name="maven-codehaus" displayName="Codehause Maven Plugin"></entry>
-      <entry name="maven-tbroyer" displayName="Broyer's Maven Plugin"></entry>
-    </entries>
-  </toc>
-</folder>

@@ -5,7 +5,7 @@
   <script type="text/javascript" src="../../gwtproject/gwtproject.nocache.js"></script> 
   <script type="text/javascript" src="../../ace/ace.js"></script> 
   <script type="text/javascript" src="../../prettify/prettify.js"></script> 
-  <title>Importing Existing Projects</title> 
+  <title>Classic DevMode</title> 
   <meta charset="UTF-8" /> 
  </head> 
  <body> 
@@ -76,15 +76,33 @@
    <div id="middle"> 
     <div id="tpl-content"> 
      <div> 
-      <div class="toc-page" style="display:none;">
+      <div class="toc-page" style="display:block;">
         Page Contents 
+       <a class="toc-page-h2" href="#Reference" title="Reference">Reference</a> 
+       <a class="toc-page-h3" href="#bindAddress" title="bindAddress">bindAddress</a> 
+       <a class="toc-page-h2" href="#Launching" title="Launching">Launching</a> 
+       <a class="toc-page-h3" href="#Create_and_Launch_Classic_DevMode" title="Create and Launch Classic DevMode">Create and Launch Classic DevMode</a> 
       </div> 
       <div id="tpl-content-name" itemprop="name">
-       <h1>Importing Projects</h1>
+       <h1>Classic DevMode (Deprecated)</h1>
       </div> 
       <div id="tpl-content-articleBody" itemprop="articleBody">  
-       <h2>Importing a Maven Project</h2> 
-       <p><iframe width="560" height="315" src="//www.youtube.com/embed/GMDTN3psbDw" frameborder="0" allowfullscreen=""></iframe></p> 
+       <p>Classic DevMode is used to launch a process which compiles the application, run a web server and uses a process OOHPM to connect to the browser. The OOPHM process is no longer supported in the modern browsers.</p> 
+       <ul> 
+        <li>DevMode will run the Super DevMode CodeServer by default in GWT 2.7.0+.</li> 
+        <li>Classic DevMode Launcher will create a program argument “-nosuperDevMode” in GWT 2.7.0+.</li> 
+       </ul> 
+       <h2 id="Reference">Reference</h2> 
+       <ul> 
+        <li><a href="../reference/DevMode.html">DevMode Options Reference</a></li> 
+       </ul> 
+       <h3 id="bindAddress">bindAddress</h3> 
+       <p>Use <code>-bindAddress 0.0.0.0</code> to bind the web server to every available host ip address.</p> 
+       <h2 id="Launching">Launching</h2> 
+       <p>Start the Classic DevMode by right clicking on the project and going to the GWT shortcuts. </p> 
+       <h3 id="Create_and_Launch_Classic_DevMode">Create and Launch Classic DevMode</h3> 
+       <p>Create a classic Dev Mode Launcher by right clicking on the project, then going to the GWT Menu. Select GWT Classic Dev Mode Launcher. Resuse the newly createdlauncher by going to the debug launchers menu and starting it. </p> 
+       <p><img src="images/classicdevmode.png" /></p> 
       </div> 
       <div class="tpl-content-lastUpdated">
         Last updated 

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <link href="../../css/main.css" rel="stylesheet" type="text/css" /> 
+  <script type="text/javascript" src="../../gwtproject/gwtproject.nocache.js"></script> 
+  <script type="text/javascript" src="../../ace/ace.js"></script> 
+  <script type="text/javascript" src="../../prettify/prettify.js"></script> 
+  <title>DevMode</title> 
+  <meta charset="UTF-8" /> 
+ </head> 
+ <body> 
+  <div id="header"> 
+   <a href="http://www.sencha.com"><img class="logo" src="./../../images/logo.png" /></a> 
+   <h1 id="title">GWT Plugins Documentation</h1> 
+   <div class="google-search"> 
+    <script>
+      (function() {
+        var cx = '011138278718949652927:g-vjyw-9k8u';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script> 
+    <gcse:search linktarget="_self" enableautocomplete="true"></gcse:search> 
+   </div> 
+  </div> 
+  <div id="content" itemscope="" itemtype="http://schema.org/Article"> 
+   <div id="tpl-toc"> 
+    <div id="tpl-toc-content"> 
+     <ul> 
+      <li class="file"><a href="../../index.html" title="">Home</a></li> 
+      <li class="folder"><a href="#">GWT Eclipse Plugin</a> 
+       <ul expand="true"> 
+        <li class="file"><a href="../../gwt-eclipse-plugin/Download.html" title="">Download</a></li> 
+        <li class="file"><a href="../../gwt-eclipse-plugin/GettingStarted.html" title="">Getting Started</a></li> 
+        <li class="folder"><a href="#">Dev Modes</a> 
+         <ul expand="false"> 
+          <li class="file"><a href="../../gwt-eclipse-plugin/devmodes/SuperDevMode.html" title="">Super DevMode</a></li> 
+          <li class="file"><a href="../../gwt-eclipse-plugin/devmodes/CodeServer.html" title="">Super DevMode with CodeServer</a></li> 
+          <li class="file"><a href="../../gwt-eclipse-plugin/devmodes/ClassicDevMode.html" title="">Classic DevMode</a></li> 
+         </ul></li> 
+        <li class="folder"><a href="#">Maven</a> 
+         <ul expand="false"> 
+          <li class="file"><a href="../../gwt-eclipse-plugin/maven/Maven.html" title="Maven">Maven</a></li> 
+         </ul></li> 
+        <li class="folder"><a href="#">Servers</a> 
+         <ul expand="false"> 
+          <li class="file"><a href="../../gwt-eclipse-plugin/servers/Servers.html" title="Servers">Servers</a></li> 
+          <li class="file"><a href="../../gwt-eclipse-plugin/servers/AppEngine.html" title="App Engine">Google App Engine</a></li> 
+          <li class="file"><a href="../../gwt-eclipse-plugin/servers/Tomcat.html" title="Tomcat">Tomcat</a></li> 
+         </ul></li> 
+        <li class="folder"><a href="#">Workspace Tips</a> 
+         <ul expand="false"> 
+          <li class="file"><a href="../../gwt-eclipse-plugin/workspace/Importing.html" title="Importing Existing Projects">Importing Existing Projects</a></li> 
+          <li class="file"><a href="../../gwt-eclipse-plugin/workspace/ProjectFacets.html" title="Project Facets">Project Facets</a></li> 
+          <li class="file"><a href="../../gwt-eclipse-plugin/workspace/ServerRuntimes.html" title="Server Runtimes">Server Runtimes</a></li> 
+         </ul></li> 
+        <li class="folder"><a href="#">Reference</a> 
+         <ul expand="false"> 
+          <li class="file"><a href="../../gwt-eclipse-plugin/reference/DevMode.html" title="">DevMode</a></li> 
+          <li class="file"><a href="../../gwt-eclipse-plugin/reference/CodeServer.html" title="">CodeServer</a></li> 
+         </ul></li> 
+        <li class="file"><a href="../../gwt-eclipse-plugin/Contributing.html" title="">Contributing</a></li> 
+       </ul></li> 
+      <li class="folder"><a href="#">GWT IntelliJ IDEA Plugin</a> 
+       <ul expand="true"> 
+        <li class="file"><a href="../../gwt-intellij-plugin/GettingStarted.html" title="">Getting Started</a></li> 
+       </ul></li> 
+     </ul> 
+    </div> 
+   </div> 
+   <div id="middle"> 
+    <div id="tpl-content"> 
+     <div> 
+      <div class="toc-page" style="display:block;">
+        Page Contents 
+       <a class="toc-page-h2" href="#Reference" title="Reference">Reference</a> 
+       <a class="toc-page-h3" href="#GWT_2_7_0" title="GWT 2.7.0">GWT 2.7.0</a> 
+       <a class="toc-page-h3" href="#GWT_2_8_0" title="GWT 2.8.0">GWT 2.8.0</a> 
+      </div> 
+      <div id="tpl-content-name" itemprop="name"> 
+       <h1>DevMode</h1> 
+      </div> 
+      <div id="tpl-content-articleBody" itemprop="articleBody"> 
+       <p>This covers DevMode program arguments reference.</p> 
+       <h2 id="Reference">Reference</h2> 
+       <ul> 
+        <li><a href="http://www.gwtproject.org/doc/latest/DevGuideCompilingAndDebugging.html">DevMode Guide</a></li> 
+        <li><a href="http://docs.sencha.com/gxt/4.x/javadoc/gwt-2.8.0/gwt-dev-2.8.0/index.html?com/google/gwt/dev/DevMode.html">DevMode Javadoc</a></li> 
+       </ul> 
+       <h3 id="GWT_2_7_0">GWT 2.7.0</h3> 
+       <p>Program arguments for running <code>DevMode</code> in GWT 2.7.0.</p> 
+       <ul> 
+        <li><p><code>DevMode</code> entrypoint:</p> <pre mode="chrome" theme="chrome"><code>DevMode [-[no]startServer] [-port port-number | &quot;auto&quot;] [-whitelist whitelist-string] [-blacklist blacklist-string] [-logdir directory] [-logLevel level] [-gen dir] [-bindAddress host-name-or-address] [-codeServerPort port-number | &quot;auto&quot;] [-[no]superDevMode] [-server servletContainerLauncher[:args]] [-startupUrl url] [-war dir] [-deploy dir] [-extra dir] [-modulePathPrefix ] [-workDir dir] [-XmethodNameDisplayMode NONE | ONLY_METHOD_NAME | ABBREVIATED | FULL] [-sourceLevel [auto, 1.6, 1.7]] [-XjsInteropMode [NONE, JS, CLOSURE]] [-[no]incremental] module[s] 
+
+where 
+  -[no]startServer         Starts a servlet container serving the directory specified by the -war flag. (defaults to ON)
+  -port                    Specifies the TCP port for the embedded web server (defaults to 8888)
+  -whitelist               Allows the user to browse URLs that match the specified regexes (comma or space separated)
+  -blacklist               Prevents the user browsing URLs that match the specified regexes (comma or space separated)
+  -logdir                  Logs to a file in the given directory, as well as graphically
+  -logLevel                The level of logging detail: ERROR, WARN, INFO, TRACE, DEBUG, SPAM, or ALL
+  -gen                     Debugging: causes normally-transient generated types to be saved in the specified directory
+  -bindAddress             Specifies the bind address for the code server and web server (defaults to 127.0.0.1)
+  -codeServerPort          Specifies the TCP port for the code server (defaults to 9997 for classic Dev Mode or 9876 for Super Dev Mode)
+  -[no]superDevMode        Runs Super Dev Mode instead of classic Development Mode. (defaults to ON)
+  -server                  Specify a different embedded web server to run (must implement ServletContainerLauncher)
+  -startupUrl              Automatically launches the specified URL
+  -war                     The directory into which deployable output files will be written (defaults to 'war')
+  -deploy                  The directory into which deployable but not servable output files will be written (defaults to 'WEB-INF/deploy' under the -war directory/jar, and may be the same as the -extra directory/jar)
+  -extra                   The directory into which extra files, not intended for deployment, will be written
+  -modulePathPrefix        The subdirectory inside the war dir where DevMode will create module directories. (defaults empty for top level)
+  -workDir                 The compiler's working directory for internal use (must be writeable; defaults to a system temp dir)
+  -XmethodNameDisplayMode  Emit extra information allow chrome dev tools to display Java identifiers in many places instead of JavaScript functions.
+  -sourceLevel             Specifies Java source level (defaults to auto:1.7)
+  -XjsInteropMode          Specifies JsInterop mode, either NONE, JS, or CLOSURE (defaults to NONE)
+  -[no]incremental         Compiles faster by reusing data from the previous compile. (defaults to ON)
+and 
+  module[s]                Specifies the name(s) of the module(s) to host
+</code></pre></li> 
+       </ul> 
+       <h3 id="GWT_2_8_0">GWT 2.8.0</h3> 
+       <p>Program arguments for running <code>DevMode</code> in GWT 2.8.0.</p> 
+       <ul> 
+        <li><p><code>DevMode</code> entrypoint:</p> <pre mode="chrome" theme="chrome"><code>DevMode [-[no]startServer] [-port port-number | &quot;auto&quot;] [-logdir directory] [-logLevel (ERROR|WARN|INFO|TRACE|DEBUG|SPAM|ALL)] [-gen dir] [-bindAddress host-name-or-address] [-codeServerPort port-number | &quot;auto&quot;] [-[no]superDevMode] [-server servletContainerLauncher[:args]] [-startupUrl url] [-war dir] [-deploy dir] [-extra dir] [-modulePathPrefix ] [-workDir dir] [-XmethodNameDisplayMode (NONE|ONLY_METHOD_NAME|ABBREVIATED|FULL)] [-sourceLevel [auto, 1.8]] [-[no]generateJsInteropExports] [-[no]incremental] [-style (DETAILED|OBFUSCATED|PRETTY)] [-[no]failOnError] [-setProperty name=value,value...] module[s] 
+
+where 
+  -[no]startServer               Starts a servlet container serving the directory specified by the -war flag. (defaults to ON)
+  -port                          Specifies the TCP port for the embedded web server (defaults to 8888)
+  -logdir                        Logs to a file in the given directory, as well as graphically
+  -logLevel                      The level of logging detail: ERROR, WARN, INFO, TRACE, DEBUG, SPAM or ALL (defaults to INFO)
+  -gen                           Debugging: causes normally-transient generated types to be saved in the specified directory
+  -bindAddress                   Specifies the bind address for the code server and web server (defaults to 127.0.0.1)
+  -codeServerPort                Specifies the TCP port for the code server (defaults to 9997 for classic Dev Mode or 9876 for Super Dev Mode)
+  -[no]superDevMode              Runs Super Dev Mode instead of classic Development Mode. (defaults to ON)
+  -server                        Specify a different embedded web server to run (must implement ServletContainerLauncher)
+  -startupUrl                    Automatically launches the specified URL
+  -war                           The directory into which deployable output files will be written (defaults to 'war')
+  -deploy                        The directory into which deployable but not servable output files will be written (defaults to 'WEB-INF/deploy' under the -war directory/jar, and may be the same as the -extra directory/jar)
+  -extra                         The directory into which extra files, not intended for deployment, will be written
+  -modulePathPrefix              The subdirectory inside the war dir where DevMode will create module directories. (defaults empty for top level)
+  -workDir                       The compiler's working directory for internal use (must be writeable; defaults to a system temp dir)
+  -XmethodNameDisplayMode        EXPERIMENTAL: Specifies method display name mode for chrome devtools: NONE, ONLY_METHOD_NAME, ABBREVIATED or FULL (defaults to NONE)
+  -sourceLevel                   Specifies Java source level (defaults to 1.8)
+  -[no]generateJsInteropExports  Generate exports for JsInterop purposes (defaults to OFF)
+  -[no]incremental               Compiles faster by reusing data from the previous compile. (defaults to ON)
+  -style                         Script output style: DETAILED, OBFUSCATED or PRETTY (defaults to OBFUSCATED)
+  -[no]failOnError               Fail compilation if any input file contains an error. (defaults to OFF)
+  -setProperty                   Set the values of a property in the form of propertyName=value1[,value2...].
+and 
+  module[s]                      Specifies the name(s) of the module(s) to host
+</code></pre></li> 
+       </ul> 
+      </div> 
+      <div class="tpl-content-lastUpdated">
+        Last updated 
+       <div id="tpl-content-lastUpdated-date" itemprop="datePublished" datetime="2016-10-01T12:32Z">
+         October 1, 2016 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div id="footer"> 
+   <div id="footer-social"> 
+    <div class="g-plusone" data-size="medium" data-annotation="none"></div> 
+   </div> 
+  </div> 
+  <!-- GooglePlus --> 
+  <script type="text/javascript">
+    (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/platform.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script> 
+  <!-- Google Analytics --> 
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-62291716-2', 'auto');
+	ga('send', 'pageview');
+  </script>  
+ </body>
+</html>

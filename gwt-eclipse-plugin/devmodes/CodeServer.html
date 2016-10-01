@@ -5,7 +5,7 @@
   <script type="text/javascript" src="../../gwtproject/gwtproject.nocache.js"></script> 
   <script type="text/javascript" src="../../ace/ace.js"></script> 
   <script type="text/javascript" src="../../prettify/prettify.js"></script> 
-  <title>Importing Existing Projects</title> 
+  <title>Super DevMode with CodeServer</title> 
   <meta charset="UTF-8" /> 
  </head> 
  <body> 
@@ -76,15 +76,31 @@
    <div id="middle"> 
     <div id="tpl-content"> 
      <div> 
-      <div class="toc-page" style="display:none;">
+      <div class="toc-page" style="display:block;">
         Page Contents 
+       <a class="toc-page-h2" href="#Reference" title="Reference">Reference</a> 
+       <a class="toc-page-h3" href="#launcherDir" title="launcherDir">launcherDir</a> 
+       <a class="toc-page-h2" href="#Launching" title="Launching">Launching</a> 
+       <a class="toc-page-h3" href="#Creating_and_Launching" title="Creating and Launching">Creating and Launching</a> 
       </div> 
       <div id="tpl-content-name" itemprop="name">
-       <h1>Importing Projects</h1>
+       <h1>Super DevMode with CodeServer (Recommended)</h1>
       </div> 
       <div id="tpl-content-articleBody" itemprop="articleBody">  
-       <h2>Importing a Maven Project</h2> 
-       <p><iframe width="560" height="315" src="//www.youtube.com/embed/GMDTN3psbDw" frameborder="0" allowfullscreen=""></iframe></p> 
+       <p>Super Dev Mode is used to launch a process to compile the application and provide source maps for any modern browser. A web server will be needed to launch with this process, except for mobile client debugging.</p> 
+       <ul> 
+        <li>The code server does not have a built in Jetty web server like DevMode does.</li> 
+       </ul> 
+       <h2 id="Reference">Reference</h2> 
+       <ul> 
+        <li><a href="../reference/CodeServer.html">CodeServer Options Reference</a></li> 
+       </ul> 
+       <h3 id="launcherDir">launcherDir</h3> 
+       <p>Use the <code>-launcherDir output/to/warDir</code> to direct the compiler to put the output in the war directory. This works well with WTP server runtime configurations. This prevents from having to use the bookmarklets.</p> 
+       <h2 id="Launching">Launching</h2> 
+       <p>Launching the CodeServer is a server that listens for compile requests. It compiles the application when requested. </p> 
+       <h3 id="Creating_and_Launching">Creating and Launching</h3> 
+       <p>Create a launcher by right clicking on the project and going to the GWT Menu and launching Super Dev Mode (with CodeServer). Reuse the newly created launcher by visiting the debug menu at the top and clicking on the launcher shortcut.</p> 
       </div> 
       <div class="tpl-content-lastUpdated">
         Last updated 

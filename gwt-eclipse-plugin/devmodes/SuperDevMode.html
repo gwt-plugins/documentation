@@ -5,7 +5,7 @@
   <script type="text/javascript" src="../../gwtproject/gwtproject.nocache.js"></script> 
   <script type="text/javascript" src="../../ace/ace.js"></script> 
   <script type="text/javascript" src="../../prettify/prettify.js"></script> 
-  <title>Super Dev Mode</title> 
+  <title>Super DevMode</title> 
   <meta charset="UTF-8" /> 
  </head> 
  <body> 
@@ -32,26 +32,16 @@
    <div id="tpl-toc"> 
     <div id="tpl-toc-content"> 
      <ul> 
-      <li class="file"><a href="../../index.html" title="Home">Home</a></li> 
-      <li class="folder"><a href="#">Eclipse Plugin</a> 
+      <li class="file"><a href="../../index.html" title="">Home</a></li> 
+      <li class="folder"><a href="#">GWT Eclipse Plugin</a> 
        <ul expand="true"> 
-        <li class="file"><a href="../../gwt-eclipse-plugin/Download.html" title="Download">Download</a></li> 
-        <li class="file"><a href="../../gwt-eclipse-plugin/GettingStarted.html" title="Getting Started">Getting Started</a></li> 
+        <li class="file"><a href="../../gwt-eclipse-plugin/Download.html" title="">Download</a></li> 
+        <li class="file"><a href="../../gwt-eclipse-plugin/GettingStarted.html" title="">Getting Started</a></li> 
         <li class="folder"><a href="#">Dev Modes</a> 
          <ul expand="false"> 
-          <li class="file"><a href="../../gwt-eclipse-plugin/devmodes/DevMode.html" title="Classic Dev Mode">Classic Dev Mode</a></li> 
-          <li class="file"><a href="../../gwt-eclipse-plugin/devmodes/SuperDevMode.html" title="Super Dev Mode">Super Dev Mode</a></li> 
-          <li class="folder"><a href="#">Super Dev Modes</a> 
-           <ul expand="false"> 
-            <li class="file"><a href="../../gwt-eclipse-plugin/devmodes/superdevmode/SuperDevMode-DevMode.html" title="Super Dev Mode using DevMode">DevMode SDM</a></li> 
-            <li class="file"><a href="../../gwt-eclipse-plugin/devmodes/superdevmode/SuperDevMode-CodeServer.html" title="Super Dev Mode using CodeServer">CodeServer</a></li> 
-            <li class="file"><a href="../../gwt-eclipse-plugin/devmodes/superdevmode/Breakpoints.html" title="Breakpoints">Breakpoints</a></li> 
-            <li class="folder"><a href="#">Maven</a> 
-             <ul expand="false"> 
-              <li class="file"><a href="../../gwt-eclipse-plugin/devmodes/superdevmode/maven/maven-codehaus.html" title="">Codehause Maven Plugin</a></li> 
-              <li class="file"><a href="../../gwt-eclipse-plugin/devmodes/superdevmode/maven/maven-tbroyer.html" title="">Broyer's Maven Plugin</a></li> 
-             </ul></li> 
-           </ul></li> 
+          <li class="file"><a href="../../gwt-eclipse-plugin/devmodes/SuperDevMode.html" title="">Super DevMode</a></li> 
+          <li class="file"><a href="../../gwt-eclipse-plugin/devmodes/CodeServer.html" title="">Super DevMode with CodeServer</a></li> 
+          <li class="file"><a href="../../gwt-eclipse-plugin/devmodes/ClassicDevMode.html" title="">Classic DevMode</a></li> 
          </ul></li> 
         <li class="folder"><a href="#">Maven</a> 
          <ul expand="false"> 
@@ -69,7 +59,16 @@
           <li class="file"><a href="../../gwt-eclipse-plugin/workspace/ProjectFacets.html" title="Project Facets">Project Facets</a></li> 
           <li class="file"><a href="../../gwt-eclipse-plugin/workspace/ServerRuntimes.html" title="Server Runtimes">Server Runtimes</a></li> 
          </ul></li> 
+        <li class="folder"><a href="#">Reference</a> 
+         <ul expand="false"> 
+          <li class="file"><a href="../../gwt-eclipse-plugin/reference/DevMode.html" title="">DevMode</a></li> 
+          <li class="file"><a href="../../gwt-eclipse-plugin/reference/CodeServer.html" title="">CodeServer</a></li> 
+         </ul></li> 
         <li class="file"><a href="../../gwt-eclipse-plugin/Contributing.html" title="">Contributing</a></li> 
+       </ul></li> 
+      <li class="folder"><a href="#">GWT IntelliJ IDEA Plugin</a> 
+       <ul expand="true"> 
+        <li class="file"><a href="../../gwt-intellij-plugin/GettingStarted.html" title="">Getting Started</a></li> 
        </ul></li> 
      </ul> 
     </div> 
@@ -80,76 +79,37 @@
       <div class="toc-page" style="display:block;">
         Page Contents 
        <a class="toc-page-h2" href="#Reference" title="Reference">Reference</a> 
-       <a class="toc-page-h2" href="#Options" title="Options">Options</a> 
        <a class="toc-page-h3" href="#launcherDir" title="launcherDir">launcherDir</a> 
        <a class="toc-page-h3" href="#bindAddress" title="bindAddress">bindAddress</a> 
        <a class="toc-page-h2" href="#Launching" title="Launching">Launching</a> 
-       <a class="toc-page-h3" href="#Launching_Super_Dev_Mode_with_DevMode" title="Launching Super Dev Mode with DevMode">Launching Super Dev Mode with DevMode</a> 
-       <a class="toc-page-h3" href="#Launching_Super_Dev_Mode_with_the_CodeServer" title="Launching Super Dev Mode with the CodeServer">Launching Super Dev Mode with the CodeServer</a> 
-       <a class="toc-page-h3" href="#Launching_Super_Dev_Mode_with_Maven" title="Launching Super Dev Mode with Maven">Launching Super Dev Mode with Maven</a> 
+       <a class="toc-page-h3" href="#Create_and_Launch_Super_DevMode" title="Create and Launch Super DevMode">Create and Launch Super DevMode</a> 
       </div> 
-      <div id="tpl-content-name" itemprop="name"> 
-       <h1>Super Dev Mode</h1> 
+      <div id="tpl-content-name" itemprop="name">
+       <h1>Super DevMode</h1>
       </div> 
-      <div id="tpl-content-articleBody" itemprop="articleBody"> 
-       <p>Super Dev Mode is used to launch a process to compile the application and source maps for modern browsers. A server will be needed to launch with this process. Such as Dev Mode built in Jetty for the web server. </p> 
+      <div id="tpl-content-articleBody" itemprop="articleBody">  
+       <p>Super Dev Mode is used to launch a process to compile the application and source maps for modern browsers. A web server will be needed to launch with this process when debugging in a browser. Such as Dev Mode built in Jetty for the web server. </p> 
+       <ul> 
+        <li>DevMode will run the Super DevMode CodeServer by default in GWT 2.7.0+.</li> 
+        <li>Mobile debugging uses the web server on the device.</li> 
+       </ul> 
        <h2 id="Reference">Reference</h2> 
        <ul> 
-        <li><a href="http://www.gwtproject.org/articles/superdevmode.html">Super Dev Mode Guide</a></li> 
-       </ul> 
-       <h2 id="Options">Options</h2> 
-       <ul> 
-        <li><p>GWT 2.6.1</p> <pre mode="chrome" theme="chrome"><code>CodeServer [-[no]allowMissingSrc] [-bindAddress address] [-[no]compileTest] [-compileTestRecompiles count] [-[no]failOnError] [-[no]precompile] [-port port] [-src dir] [-X[no]enforceStrictResources] [-workDir dir] [-launcherDir] [-[no]incremental] [-sourceLevel [auto, 1.6, 1.7]] [-logLevel (ERROR|WARN|INFO|TRACE|DEBUG|SPAM|ALL)] [-XjsInteropMode (NONE|JS|CLOSURE)] [-XmethodNameDisplayMode (NONE|ONLY_METHOD_NAME|ABBREVIATED|FULL)] [module]
-
-where
-  -[no]allowMissingSrc          Allows -src flags to reference missing directories. (defaults to OFF)
-  -bindAddress                  The ip address of the code server. Defaults to 127.0.0.1.
-  -[no]compileTest              Exits after compiling the modules. The exit code will be 0 if the compile succeeded. (defaults to OFF)
-  -compileTestRecompiles        The number of times to recompile (after the first one) during a compile test.
-  -[no]failOnError              Stop compiling if a module has a Java file with a compile error, even if unused. (defaults to OFF)
-  -[no]precompile               Precompile modules. (defaults to ON)
-  -port                         The port where the code server will run.
-  -src                          A directory containing GWT source to be prepended to the classpath for compiling.
-  -X[no]enforceStrictResources  EXPERIMENTAL: Don't implicitly depend on &quot;client&quot; and &quot;public&quot; when a module doesn't define any dependencies. (defaults to OFF)
-  -workDir                      The root of the directory tree where the code server willwrite compiler output. If not supplied, a temporary directorywill be used.
-  -launcherDir                  An output directory where files for launching Super Dev Mode will be written. (Optional.)
-  -[no]incremental              Compiles faster by reusing data from the previous compile. (defaults to ON)
-  -sourceLevel                  Specifies Java source level (defaults to auto:1.7)
-  -logLevel                     The level of logging detail: ERROR, WARN, INFO, TRACE, DEBUG, SPAM or ALL (defaults to INFO)
-  -XjsInteropMode               EXPERIMENTAL: Specifies JsInterop mode: NONE, JS or CLOSURE (defaults to NONE)
-  -XmethodNameDisplayMode       EXPERIMENTAL: Specifies method display name mode for chrome devtools: NONE, ONLY_METHOD_NAME, ABBREVIATED or FULL (defaults to NONE)
-and
-  module                        The GWT modules that the code server should compile. (Example: com.example.MyApp)
-</code></pre></li> 
+        <li><a href="../reference/DevMode.html">DevMode Options Reference</a></li> 
        </ul> 
        <h3 id="launcherDir">launcherDir</h3> 
        <p>Use the <code>-launcherDir output/to/warDir</code> to direct the compiler to put the output in the war directory. This prevents from having to use the book marklets.</p> 
        <h3 id="bindAddress">bindAddress</h3> 
        <p>Use the <code>-bindAddress 0.0.0.0</code> to bind on every IP.</p> 
        <h2 id="Launching">Launching</h2> 
-       <p>There is more than one way to launch Super Dev Mode. Super Dev Mode can launched using the DevMode or CodeServer entry points.</p> 
-       <p><img src="images/superdevmodes.png" /> </p> 
-       <h3 id="Launching_Super_Dev_Mode_with_DevMode">Launching Super Dev Mode with DevMode</h3> 
-       <p>Using the DevMode entry point to launch Super Dev Mode. </p> 
-       <ul> 
-        <li><a href="./superdevmode/SuperDevMode-DevMode.html">Super Dev Mode using DevMode</a></li> 
-       </ul> 
-       <h3 id="Launching_Super_Dev_Mode_with_the_CodeServer">Launching Super Dev Mode with the CodeServer</h3> 
-       <p>Using the CodeServer entry point to launch Super Dev Mode.</p> 
-       <ul> 
-        <li><a href="./superdevmode/SuperDevMode-CodeServer.html">Super Dev Mode using the CodeServer</a></li> 
-       </ul> 
-       <h3 id="Launching_Super_Dev_Mode_with_Maven">Launching Super Dev Mode with Maven</h3> 
-       <p>Using maven to start Super Dev Mode</p> 
-       <ul> 
-        <li><a href="./superdevmode/maven/maven-codehaus.html">Super Dev Mode using Codehause Maven Plugin</a></li> 
-        <li><a href="./superdevmode/maven/maven-tbroyer.html">Super Dev Mode using Broyer’s Maven Plugin</a></li> 
-       </ul> 
+       <p>Create a Super DevMode launcher by right clicking on the project and going to the GWT menu. Then click on the Super Dev Mode launcher. </p> 
+       <h3 id="Create_and_Launch_Super_DevMode">Create and Launch Super DevMode</h3> 
+       <p>Using the DevMode entry point to launch Super Dev Mode. Reuse the newly created launcher by going to the debug launcher menu at the top and select it. </p> 
       </div> 
       <div class="tpl-content-lastUpdated">
         Last updated 
-       <div id="tpl-content-lastUpdated-date" itemprop="datePublished" datetime="2016-10-01T10:04Z">
-         October 1, 2016 
+       <div id="tpl-content-lastUpdated-date" itemprop="datePublished" datetime="2016-10-01T12:32Z">
+        October 1, 2016
        </div> 
       </div> 
      </div> 

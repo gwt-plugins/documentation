@@ -8,11 +8,12 @@
   <packaging>jar</packaging>
 
   <properties>
-    <gxt.version>3.1-SNAPSHOT</gxt.version>
-
+    <!-- TODO upgrade -->
     <java.version>1.7</java.version>
-    <gwtquery.version>1.3.2</gwtquery.version>
+    <!-- TODO upgrade -->
     <gwt.version>2.5.1</gwt.version>
+    <!-- TODo upgrade -->
+    <gwtquery.version>1.3.2</gwtquery.version>
   </properties>
 
   <scm>
@@ -142,28 +143,6 @@
         </executions>
       </plugin>
 
-      <!-- Integration testing which runs classes *TestInt.java -->
-      <!-- run 'mvn integration-test -Pintegration-test' -->
-      <!-- <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-failsafe-plugin</artifactId>
-        <version>2.12</version>
-        <executions>
-          <execution>
-            <id>integration-test</id>
-            <phase>integration-test</phase>
-            <goals>
-              <goal>integration-test</goal>
-            </goals>
-            <configuration>
-              <includes>
-                <include>**/*TestInt.java</include>
-              </includes>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin> -->
-
       <!-- Server for running tests *TestInt.java -->
       <!-- 'mvn jetty:run' -->
       <plugin>
@@ -196,13 +175,14 @@
         </executions> -->
       </plugin>
 
+      <!-- https://github.com/github/maven-plugins - docs -->
       <!-- Gihub Upload -->
       <!-- run 'mvn site' to upload -->
       <!-- run 'mvn site -X' to debug and upload. -->
       <plugin>
         <groupId>com.github.github</groupId>
         <artifactId>site-maven-plugin</artifactId>
-        <version>0.11</version>
+        <version>0.12</version>
         <configuration>
           <!-- <dryRun>true</dryRun> -->
           <message>Creating site for ${project.version}</message>
@@ -211,8 +191,8 @@
           <outputDirectory>${project.build.directory}/generated-site</outputDirectory>
           <force>true</force>
           <merge>true</merge>
-          <repositoryName>gwt-eclipse-plugin</repositoryName>
-          <repositoryOwner>gwt-eclipse-plugin</repositoryOwner>
+          <repositoryName>documentation</repositoryName>
+          <repositoryOwner>gwt-plugins</repositoryOwner>
         </configuration>
         <executions>
           <execution>

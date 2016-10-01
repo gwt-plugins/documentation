@@ -16,4 +16,4 @@
 
 ## Build Server
 
-* [Build Server](http://104.154.51.222/)
+* [Build Server](https://teamcity.sencha.com/viewType.html?buildTypeId=Gxt3_Gwt_GwtPluginsDocumentation/)

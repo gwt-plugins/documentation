@@ -2,8 +2,9 @@
 <folder href="index">
   <toc>
     <entries>
-      <entry name="index" displayName="Home" description="Home"></entry>
-      <entry name="gwt-eclipse-plugin/" displayName="Eclipse Plugin" description="Eclipse Plugin" expand="true"></entry>
+      <entry name="index" displayName="Home"></entry>
+      <entry name="gwt-eclipse-plugin/" displayName="GWT Eclipse Plugin" expand="true"></entry>
+      <entry name="gwt-intellij-plugin/" displayName="GWT IntelliJ IDEA Plugin" expand="true"></entry>
     </entries>
   </toc>
 </folder>

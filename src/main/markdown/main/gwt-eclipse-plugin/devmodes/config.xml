@@ -2,9 +2,9 @@
 <folder href="index">
   <toc>
     <entries>
-      <entry name="DevMode" displayName="Classic Dev Mode" description="Classic Dev Mode"></entry>
-      <entry name="SuperDevMode" displayName="Super Dev Mode" description="Super Dev Mode"></entry>
-      <entry name="superdevmode/" displayName="Super Dev Modes" description="Super Dev Modes"></entry>
+      <entry name="SuperDevMode" displayName="Super DevMode"></entry>
+      <entry name="CodeServer" displayName="Super DevMode with CodeServer"></entry>
+      <entry name="ClassicDevMode" displayName="Classic DevMode"></entry>
     </entries>
   </toc>
 </folder>

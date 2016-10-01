@@ -1,7 +1,21 @@
 # Download
-Download the GWT Eclipse Plugin
+This covers install the GWT Eclipse Plugin.
 
-## Available Features
+## Plugin History
+The history of the GWT Debugging for Eclipse.
+
+* First came the Goolge Plugin for Eclipse (GPE). It will be deprecated as of 2016 4th quarter. 
+* Then came the Google Plugin for Eclipse Fork (GPE-FORK V2) and it will be dperecated November 2016.
+* Then came the GWT Eclipse Plugin (V3), which separated the GPE cloud features and became GWT Eclipse Plugin. This will be recommended as of November 2016.
+
+## GWT Eclipse Plugin (V3) 
+This plugin will be released November 2016.
+
+
+## GPE-FORK (V2) (*Deprecated)
+Installing the GPE-FORK. (*Deprecated)
+
+### Available Features
 
 * Google Plugin for Eclipse 4.4 (GWT Plugin)
 * Google App Engine Maven Integration
@@ -9,17 +23,17 @@ Download the GWT Eclipse Plugin
 * GWT SDK - GWT 2.7.0
 * App Engine SDK - Recent App Engine SDK
 
-## Warning
+### Warning
 1. Uninstall the GPE plugin before installing this plugin.
 2. Or install a fresh copy of Eclipse to use with this plugin.
 
 
-## Update Site
+### Update Site
 Uninstall GPE or Install a fresh copy of Eclipse. 
 
 * [http://storage.googleapis.com/gwt-eclipse-plugin/release](http://storage.googleapis.com/gwt-eclipse-plugin/release)
 
-## Installation
+### Installation
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/93hN_Y9f0N0" frameborder="0" allowfullscreen></iframe>
 
@@ -38,6 +52,3 @@ Uninstall GPE or Install a fresh copy of Eclipse.
 6. Select features to be installed
 
 	<img width="500px" src="images/features.png"/>
-
-## File Issues
-If you find a bug, file the issues [here](./Contributing.html).

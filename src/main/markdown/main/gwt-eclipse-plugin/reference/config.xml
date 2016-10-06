@@ -4,6 +4,7 @@
     <entries>
       <entry name="DevMode" displayName="DevMode"></entry>
       <entry name="CodeServer" displayName="CodeServer"></entry>
+      <entry name="Compiler" displayName="Compiler"></entry>
     </entries>
   </toc>
 </folder>

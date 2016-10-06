@@ -3,6 +3,7 @@
   <toc>
     <entries>
       <entry name="index" displayName="Home"></entry>
+      <entry name="gwt/" displayName="GWT" expand="true"></entry>
       <entry name="gwt-eclipse-plugin/" displayName="GWT Eclipse Plugin" expand="true"></entry>
       <entry name="gwt-intellij-plugin/" displayName="GWT IntelliJ IDEA Plugin" expand="true"></entry>
     </entries>

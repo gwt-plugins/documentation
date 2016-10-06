@@ -1,4 +1,4 @@
-# CodeServer
+# Compiler
 This covers Compiler program arguments reference.
 
 ## Reference

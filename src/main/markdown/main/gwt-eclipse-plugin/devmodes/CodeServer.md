@@ -1,30 +1,25 @@
-# Super DevMode with CodeServer (Recommended)
-Super Dev Mode is used to launch a process to compile the application and provide source maps for any modern browser. 
-A web server will be needed to launch with this process, except for mobile client debugging.
+# GWT Development Mode (Using the CodeServer Launcher)
+Using this Development Mode will start a code server that listens for requests from the browser to compile the application.
+When the `CodeServer` launches and moves the resources to the module directory. 
+Then it adds a war/module/module.nocache.js super dev mode initialization script to which will launch the compile request to the CodeServer.
 
-* The code server does not have a built in Jetty web server like DevMode does.
+* The code server does not have a built in Jetty web server like [DevMode](./DevMode.html) does.
 
 ## Reference
 
-* [CodeServer Options Reference](../reference/CodeServer.html)
+* [CodeServer Program Arguments Reference](../../gwt/launchers/CodeServer.html)
 
-### launcherDir
-Use the `-launcherDir output/to/warDir` to direct the compiler to put the output in the war directory. 
-This works well with WTP server runtime configurations.
+### Use launcherDir
+Use the `-launcherDir output/to/warDir` to direct the compiler to put the output the resources and module/module.nocache.js in the war directory. 
 This prevents from having to use the bookmarklets.
 
+### Verify Launch
+If you want to verify that the code server launched and pushed the resources into the directory. 
+Go into your war output directory specified in the `-launcherDir` and find module/module.nocache.js and find super development mode. 
+If you find super development mode anywhere in the file it did it's job. 
+Launching will start a the compilation of the application.
 
 ## Launching
-Launching the CodeServer is a server that listens for compile requests. 
-It compiles the application when requested. 
+Create and reuse a launcher by right clicking on the project and going to the `Debug As` and then to `GWT Development Mode`.
 
-### Creating and Launching
-Create a launcher by right clicking on the project and going to the GWT Menu and launching Super Dev Mode (with CodeServer).
-Reuse the newly created launcher by visiting the debug menu at the top and clicking on the launcher shortcut.
-
-
-
-
-
-
-
+<img src="images/CodeServerShortcut.png" />

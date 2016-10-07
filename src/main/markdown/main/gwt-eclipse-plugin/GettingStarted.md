@@ -1,43 +1,36 @@
 # Getting Started with GWT Eclipse Plugin
-This covers getting sarted with using the GWT Eclipse Plugin to debug GWT application.
+This covers how to get started with debugging your GWT application. 
 
-
-## Installing
+## GWT Eclipse Plugin Install
 First install the GWT Eclipse Plugin. 
 
 * [GWT Eclipse Plugin Download and Install](./Download.html)
 
 
-## Choose the Debugging technique 
-There are several ways you can debug an application.
-Choose the best method depending on which type of web server or mobile client your developing your application for.  
+## Choose a Development Mode 
+Choose a development mode that suites your web server or mobile device.
+
+* The best choice for debugging a GWT application on any server or mobile device is the `#1 GWT Development Mode`. 
+* If you're using a generic server or Jetty then `#2 GWT Development Mode with Jetty` will work. 
+* If you're looking for the legacy or classic development mode, then choose `#3 GWT Legacy Development Mode`.   
 
 
-### 1. Super DevMode with the CodeServer (*Recommended)
-This uses the `CodeServer` entrypoint.
-It runs the `CodeServer` and listens for compile requests from the browser. 
-And it will compile the application in Super Dev Mode.
-This is the best choice for running with any web server or mobile client configuration. 
-Break points, browser insepction and stack trace isnepction can be added with the SDBG plugin.
+### 1. GWT Development Mode (Using the CodeServer Launcher)
+If you're looking to run your application on any server or mobile device this is the best choice. 
  
-* [Find out how to run Super DevMode with the CodeServer](./devmodes/SuperDevMode.html)
+* [Find out how to run GWT Development Mode](./devmodes/CodeServer.html)
 
 
-### 2. Super DevMode
-This uses the `DevMode` entrypoint.
-By default it runs a built in Jetty web server to host the web application. 
-And uses the `CodeServer` to run another server that will compile the application in Super Dev Mode.
-While the default web server can be turned off, it's better to use the CodeServer to launch Super Dev Mode.
-Break points, browser insepction and stack trace isnepction can be added with the SDBG plugin. 
+### 2. GWT Development Mode with Jetty (Using the DevMode Launcher)
+If you have a basic server configuration or running Jetty then this will work. 
 
-* [Find out how to run Super DevMode](./devmodes/SuperDevMode.html)
+* [Find out how to run GWT Development Mode with Jetty](./devmodes/DevMode.html)
 
 
-### 3. Classic DevMode (*Deprecated)
-This uses `DevMode` as the entrypoint and with the argument `-nosuperDevMode (GWT 2.7)`. And it is deprecated.  
-Classic DevMode allows for IDE integration for break points, variable inspection, and stack traces.
-It can only be run on Firefox < 26, IE 8 - IE 10, although it's not supported in the modern browers.   
-It's recommended to switch to using Super Dev Mode (#1 or #2 above).    
+### 3. GWT Legacy Development Mode (Deprecated)
+This runs the Legacy Development Mode using OOPHM to communicate with the browser which has been removed from the modern browsers. 
+This will only run on any version less than FireFox version 26. 
+Or can be run on Internet Explorer (IE) IE 8 to IE 11.  
 
-* [Find out how to run Classic DevMode](./devmodes/ClassicDevMode.html)
+* [Find out how to run Legacy Development Mode](./devmodes/LegacyDevMode.html)
 

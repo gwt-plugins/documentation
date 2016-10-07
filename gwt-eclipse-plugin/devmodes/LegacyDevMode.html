@@ -5,7 +5,7 @@
   <script type="text/javascript" src="../../gwtproject/gwtproject.nocache.js"></script> 
   <script type="text/javascript" src="../../ace/ace.js"></script> 
   <script type="text/javascript" src="../../prettify/prettify.js"></script> 
-  <title>Google App Engine</title> 
+  <title>Legacy DevMode</title> 
   <meta charset="UTF-8" /> 
  </head> 
  <body> 
@@ -82,57 +82,33 @@
      <div> 
       <div class="toc-page" style="display:block;">
         Page Contents 
-       <a class="toc-page-h2" href="#Maven" title="Maven">Maven</a> 
-       <a class="toc-page-h3" href="#Project" title="Project">Project</a> 
-       <a class="toc-page-h3" href="#Archetype" title="Archetype">Archetype</a> 
+       <a class="toc-page-h2" href="#Reference" title="Reference">Reference</a> 
+       <a class="toc-page-h3" href="#bindAddress" title="bindAddress">bindAddress</a> 
        <a class="toc-page-h2" href="#Launching" title="Launching">Launching</a> 
       </div> 
-      <div id="tpl-content-name" itemprop="name"> 
-       <h1>Google App Engine</h1> 
+      <div id="tpl-content-name" itemprop="name">
+       <h1>Legacy Development Mode (a.k.a. Classic Development Mode)</h1>
       </div> 
-      <div id="tpl-content-articleBody" itemprop="articleBody"> 
-       <h2 id="Maven">Maven</h2> 
-       <p>The App Engine Java SDK ZIP is required in the Maven dependencies.</p> 
+      <div id="tpl-content-articleBody" itemprop="articleBody">  
+       <p>Legacy Development Mode is used to launch a process which compiles the application, runs a web server and uses a process OOHPM to connect to the browser. The OOPHM process is no longer supported in the modern browsers.</p> 
        <ul> 
-        <li><p>App Engine Dependencies. Be sure to use the Java SDK too.</p> <pre mode="chrome" theme="chrome"><code>&lt;dependency&gt;
-    &lt;groupId&gt;com.google.appengine&lt;/groupId&gt;
-    &lt;artifactId&gt;appengine-api-1.0-sdk&lt;/artifactId&gt;
-    &lt;version&gt;${appengine.version}&lt;/version&gt;
-&lt;/dependency&gt;
-
-&lt;!-- Eclipse will extract this into the .m2 repository --&gt;
-&lt;dependency&gt;
-    &lt;groupId&gt;com.google.appengine&lt;/groupId&gt;
-    &lt;artifactId&gt;appengine-java-sdk&lt;/artifactId&gt;
-    &lt;version&gt;${appengine.version}&lt;/version&gt;
-    &lt;type&gt;zip&lt;/type&gt;
-    &lt;scope&gt;provided&lt;/scope&gt;
-&lt;/dependency&gt;
-</code></pre></li> 
+        <li>The <code>DevMode</code> launcher will run the Super DevMode CodeServer by default in GWT 2.7.0+ and to turn on Legacy dev mode use <code>-nosuperDevMode</code>.</li> 
+        <li>The legacy <code>DevMode</code> launcher will create a program argument “-nosuperDevMode” in GWT 2.7.0+.</li> 
        </ul> 
-       <h3 id="Project">Project</h3> 
+       <h2 id="Reference">Reference</h2> 
        <ul> 
-        <li><a href="https://github.com/branflake2267/Archetypes/tree/master/archetypes/gwt-basic-rpc-appengine">Example Project</a></li> 
+        <li><a href="../../gwt/launchers/DevMode.html">DevMode Options Reference</a></li> 
        </ul> 
-       <h3 id="Archetype">Archetype</h3> 
-       <ul> 
-        <li><p>Example Archetype</p> <pre mode="chrome" theme="chrome"><code>mvn archetype:generate -DarchetypeGroupId=com.github.branflake2267.archetypes \
--DarchetypeRepository=https://oss.sonatype.org/content/repositories/snapshots \
--DarchetypeArtifactId=gwt-basic-rpc-appengine-archetype \
--DarchetypeVersion=1.0-SNAPSHOT \
--DgroupId=com.projectname.project \
--DartifactId=new-project-name \
--Dmodule=Project
-</code></pre></li> 
-       </ul> 
+       <h3 id="bindAddress">bindAddress</h3> 
+       <p>Use <code>-bindAddress 0.0.0.0</code> to bind the web server to every available host ip address.</p> 
        <h2 id="Launching">Launching</h2> 
-       <p>Using and launching the App Engine server runtime.</p> 
-       <p><iframe width="560" height="315" src="//www.youtube.com/embed/SUueCocqf_U" frameborder="0" allowfullscreen=""></iframe></p> 
+       <p>Create and reuse a launcher by right clicking on the project and going to the <code>Debug As</code> and then to <code>GWT Legacy Development Mode with Jetty</code>.</p> 
+       <p><img src="images/LegacyDevModeShortcut.png" /></p> 
       </div> 
       <div class="tpl-content-lastUpdated">
         Last updated 
        <div id="tpl-content-lastUpdated-date" itemprop="datePublished" datetime="2016-10-07T09:20Z">
-         October 7, 2016 
+        October 7, 2016
        </div> 
       </div> 
      </div> 

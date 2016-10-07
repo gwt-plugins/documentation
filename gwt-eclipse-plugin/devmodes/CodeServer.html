@@ -5,7 +5,7 @@
   <script type="text/javascript" src="../../gwtproject/gwtproject.nocache.js"></script> 
   <script type="text/javascript" src="../../ace/ace.js"></script> 
   <script type="text/javascript" src="../../prettify/prettify.js"></script> 
-  <title>Super DevMode with CodeServer</title> 
+  <title>CodeServer Launcher</title> 
   <meta charset="UTF-8" /> 
  </head> 
  <body> 
@@ -46,11 +46,11 @@
        <ul expand="true"> 
         <li class="file"><a href="../../gwt-eclipse-plugin/Download.html" title="">Download</a></li> 
         <li class="file"><a href="../../gwt-eclipse-plugin/GettingStarted.html" title="">Getting Started</a></li> 
-        <li class="folder"><a href="#">Dev Modes</a> 
+        <li class="folder"><a href="#">Development Mode Launchers</a> 
          <ul expand="false"> 
-          <li class="file"><a href="../../gwt-eclipse-plugin/devmodes/SuperDevMode.html" title="">Super DevMode</a></li> 
-          <li class="file"><a href="../../gwt-eclipse-plugin/devmodes/CodeServer.html" title="">Super DevMode with CodeServer</a></li> 
-          <li class="file"><a href="../../gwt-eclipse-plugin/devmodes/ClassicDevMode.html" title="">Classic DevMode</a></li> 
+          <li class="file"><a href="../../gwt-eclipse-plugin/devmodes/DevMode.html" title="">DevMode Launcher</a></li> 
+          <li class="file"><a href="../../gwt-eclipse-plugin/devmodes/CodeServer.html" title="">CodeServer Launcher</a></li> 
+          <li class="file"><a href="../../gwt-eclipse-plugin/devmodes/LegacyDevMode.html" title="">Legacy DevMode</a></li> 
          </ul></li> 
         <li class="folder"><a href="#">Maven</a> 
          <ul expand="false"> 
@@ -83,33 +83,34 @@
       <div class="toc-page" style="display:block;">
         Page Contents 
        <a class="toc-page-h2" href="#Reference" title="Reference">Reference</a> 
-       <a class="toc-page-h3" href="#launcherDir" title="launcherDir">launcherDir</a> 
+       <a class="toc-page-h3" href="#Use_launcherDir" title="Use launcherDir">Use launcherDir</a> 
+       <a class="toc-page-h3" href="#Verify_Launch" title="Verify Launch">Verify Launch</a> 
        <a class="toc-page-h2" href="#Launching" title="Launching">Launching</a> 
-       <a class="toc-page-h3" href="#Creating_and_Launching" title="Creating and Launching">Creating and Launching</a> 
       </div> 
       <div id="tpl-content-name" itemprop="name">
-       <h1>Super DevMode with CodeServer (Recommended)</h1>
+       <h1>GWT Development Mode (Using the CodeServer Launcher)</h1>
       </div> 
       <div id="tpl-content-articleBody" itemprop="articleBody">  
-       <p>Super Dev Mode is used to launch a process to compile the application and provide source maps for any modern browser. A web server will be needed to launch with this process, except for mobile client debugging.</p> 
+       <p>Using this Development Mode will start a code server that listens for requests from the browser to compile the application. When the <code>CodeServer</code> launches and moves the resources to the module directory. Then it adds a war/module/module.nocache.js super dev mode initialization script to which will launch the compile request to the CodeServer.</p> 
        <ul> 
-        <li>The code server does not have a built in Jetty web server like DevMode does.</li> 
+        <li>The code server does not have a built in Jetty web server like <a href="./DevMode.html">DevMode</a> does.</li> 
        </ul> 
        <h2 id="Reference">Reference</h2> 
        <ul> 
-        <li><a href="../reference/CodeServer.html">CodeServer Options Reference</a></li> 
+        <li><a href="../../gwt/launchers/CodeServer.html">CodeServer Options Reference</a></li> 
        </ul> 
-       <h3 id="launcherDir">launcherDir</h3> 
-       <p>Use the <code>-launcherDir output/to/warDir</code> to direct the compiler to put the output in the war directory. This works well with WTP server runtime configurations. This prevents from having to use the bookmarklets.</p> 
+       <h3 id="Use_launcherDir">Use launcherDir</h3> 
+       <p>Use the <code>-launcherDir output/to/warDir</code> to direct the compiler to put the output the resources and module/module.nocache.js in the war directory. This prevents from having to use the bookmarklets.</p> 
+       <h3 id="Verify_Launch">Verify Launch</h3> 
+       <p>If you want to verify that the code server launched and pushed the resources into the directory. Go into your war output directory specified in the <code>-launcherDir</code> and find module/module.nocache.js and find super development mode. If you find super development mode anywhere in the file it did it’s job. Launching will start a the compilation of the application.</p> 
        <h2 id="Launching">Launching</h2> 
-       <p>Launching the CodeServer is a server that listens for compile requests. It compiles the application when requested. </p> 
-       <h3 id="Creating_and_Launching">Creating and Launching</h3> 
-       <p>Create a launcher by right clicking on the project and going to the GWT Menu and launching Super Dev Mode (with CodeServer). Reuse the newly created launcher by visiting the debug menu at the top and clicking on the launcher shortcut.</p> 
+       <p>Create and reuse a launcher by right clicking on the project and going to the <code>Debug As</code> and then to <code>GWT Development Mode</code>.</p> 
+       <p><img src="images/CodeServerShortcut.png" /></p> 
       </div> 
       <div class="tpl-content-lastUpdated">
         Last updated 
-       <div id="tpl-content-lastUpdated-date" itemprop="datePublished" datetime="2016-10-06T09:32Z">
-        October 6, 2016
+       <div id="tpl-content-lastUpdated-date" itemprop="datePublished" datetime="2016-10-07T09:20Z">
+        October 7, 2016
        </div> 
       </div> 
      </div> 

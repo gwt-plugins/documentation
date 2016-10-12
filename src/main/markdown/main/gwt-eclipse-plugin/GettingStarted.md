@@ -8,7 +8,7 @@ First install the GWT Eclipse Plugin.
 
 
 ## Choose a Development Mode 
-Choose a development mode that suites your web server or mobile device.
+Choose a development mode that suits your web server or mobile device.
 
 * The best choice for debugging a GWT application on any server or mobile device is the `#1 GWT Development Mode`. 
 * If you're using a generic server or Jetty then `#2 GWT Development Mode with Jetty` will work. 

@@ -1,54 +1,69 @@
-# Download
-This covers install the GWT Eclipse Plugin.
+# Download the GWT Eclipse Plugin (V3)
+This covers install the GWT Eclipse Plugin 3.0.0+.
 
-## Plugin History
-The history of the GWT Debugging for Eclipse.
-
-* First came the Goolge Plugin for Eclipse (GPE). It will be deprecated as of 2016 4th quarter. 
-* Then came the Google Plugin for Eclipse Fork (GPE-FORK V2) and it will be dperecated November 2016.
-* Then came the GWT Eclipse Plugin (V3), which separated the GPE cloud features and became GWT Eclipse Plugin. This will be recommended as of November 2016.
+This plugin is of Beta quality. If you want to use the GPE-Fork, please goto the [GPE-Fork download](https://github.com/gwt-plugins/gwt-eclipse-plugin/tree/gpe-fork). 
 
 ## GWT Eclipse Plugin (V3) 
 This plugin will be released November 2016.
 
+### Plugin Features
+The available GWT Eclipse Plugin features.
 
-## GPE-FORK (V2) (*Deprecated)
-Installing the GPE-FORK. (*Deprecated)
+* GWT Eclipse Plugin - Required
+* GWT 2.7.0 SDK - Optional
+* GWT 2.8.0 SDK - Optional
+* JavaScript Debugger with Source Mapping Support - Optional and Recommended  
 
-### Available Features
+### Plugin Feature Conflicts
+Uninstall the Google Plugin for Eclipse (GPE or GPE-Fork) before installing.
 
-* Google Plugin for Eclipse 4.4 (GWT Plugin)
-* Google App Engine Maven Integration
-* Java Script Debugger (SDBG) 
-* GWT SDK - GWT 2.7.0
-* App Engine SDK - Recent App Engine SDK
-
-### Warning
-1. Uninstall the GPE plugin before installing this plugin.
-2. Or install a fresh copy of Eclipse to use with this plugin.
-
-
-### Update Site
-Uninstall GPE or Install a fresh copy of Eclipse. 
-
-* [http://storage.googleapis.com/gwt-eclipse-plugin/release](http://storage.googleapis.com/gwt-eclipse-plugin/release)
-
-### Installation
-
-<iframe width="560" height="315" src="//www.youtube.com/embed/93hN_Y9f0N0" frameborder="0" allowfullscreen></iframe>
+## Install Options
+There are three install options below. 
+The easiest option is to install from the Eclipse Market Place using either #1 or #2. 
 
 
-1. Uninstall GPE or Install a fresh copy of Eclipse
-2. Copy the update site above.
-3. Goto `Help` > `Install New Software`
-4. Paste the `Update Site` into `Work with:` and click on `Add`
-	
-	<img width="500px" src="images/install.png"/>
+## 1. Use the Drag and Drop Install Button
+Drag and drop the `install` button into Eclipse.
 
-5. Name the `Update Site`
+<a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=3107469" class="drag" title="Drag to your running Eclipse workspace to install GWT Eclipse Plugin"><img class="img-responsive" src="https://marketplace.eclipse.org/sites/all/themes/solstice/public/images/marketplace/btn-install.png" alt="Drag to your running Eclipse workspace to install GWT Eclipse Plugin" /></a>
 
-	<img src="images/name.png"/>
+Then choose the features to be installed.
+<img src="images/MarketPlaceFeatures.png" />
 
-6. Select features to be installed
 
-	<img width="500px" src="images/features.png"/>
+## 2. Install from the Eclipse Marketplace
+Go to the Eclipse Market Place and search for `GWT`.
+
+First goto the Eclipse Market Place.
+<img src="images/EclipseMarketPlace.png" />
+
+Then Search for `GWT` and install the features. 
+<img src="images/SearchForGWT.png" />
+
+Then Choose all the features you want to install.
+<img src="images/MarketPlaceFeatures.png" />
+
+Don't forget to become a Star Gazer by clicking on the like button!
+<img src="images/StarGazer.png" />
+
+
+## 3. Update Site
+Use the update site to install the features. 
+
+First goto Install New Software.
+<img src="images/InstallNewSoftware.png" />
+ 
+Then add the update site and name it `GWT Eclipse Plugin`.
+<img src="images/UpdateSite.png" />
+
+Copy and paste this update repository url and paste it into the `Work with` in the Eclipse dialog and click enter. 
+[http://storage.googleapis.com/gwt-eclipse-plugin/v3/release](http://storage.googleapis.com/gwt-eclipse-plugin/v3/release)
+
+
+
+## Google Cloud Features
+If you're looking for the features like (GPE) Google Cloud features such as App Engine Integration, then you'll want to install the Google Cloud Tools Pluing.
+
+Goto [https://github.com/GoogleCloudPlatform/google-cloud-eclipse](https://github.com/GoogleCloudPlatform/google-cloud-eclipse)
+
+

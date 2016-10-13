@@ -5,7 +5,7 @@
   <script type="text/javascript" src="../../gwtproject/gwtproject.nocache.js"></script> 
   <script type="text/javascript" src="../../ace/ace.js"></script> 
   <script type="text/javascript" src="../../prettify/prettify.js"></script> 
-  <title>Servers</title> 
+  <title>Standard Java Project</title> 
   <meta charset="UTF-8" /> 
  </head> 
  <body> 
@@ -84,22 +84,29 @@
    <div id="middle"> 
     <div id="tpl-content"> 
      <div> 
-      <div class="toc-page" style="display:none;">
+      <div class="toc-page" style="display:block;">
         Page Contents 
+       <a class="toc-page-h2" href="#Debug" title="Debug">Debug</a> 
+       <a class="toc-page-h2" href="#Change" title="Change">Change</a> 
+       <a class="toc-page-h2" href="#Compile" title="Compile">Compile</a> 
       </div> 
       <div id="tpl-content-name" itemprop="name">
-       <h1>Servers</h1>
+       <h1>Debugging GWT Web Application</h1>
       </div> 
       <div id="tpl-content-articleBody" itemprop="articleBody">  
-       <p>Choosing an application server.</p> 
-       <h2>App Engine</h2> 
-       <ul> 
-        <li><a href="./AppEngine.html">Using the App Engine Server Runtime</a></li> 
-       </ul> 
-       <h2>Tomcat</h2> 
-       <ul> 
-        <li><a href="./Tomcat.html">Using the Tomcat Server Runtime</a></li> 
-       </ul> 
+       <p>Debugging a simple GWT Java project.</p> 
+       <h2 id="Debug">Debug</h2> 
+       <p>Debug the web application by creating a launcher for it. This can be done by going to the GWT launcher shortcuts. </p> 
+       <p>Start by reating a launcher for the applicaiton. Or reuse a previously created launcher. <img src="images/GwtDevelopmentModeWithJetty.png" style="display:block; width:400px;" /></p> 
+       <p>The Console view will log the CodeServer output. <img src="images/CodeServerConsoleView.png" style="display:block; width:400px;" /></p> 
+       <p>Then the Dev Mode view will focus. Right click ont he bookmark and select <code>Open with SDBG Chrome Js Debugger</code> the first time you start. Opening with the Javascript Debugger will allow you to see the browser logging in the IDE and use breakpoints.<br /><img src="images/DevModeView.png" style="display:block; width:400px;" /></p> 
+       <p>Then the Chrome browser will open and send a request to the CodeServer to start to compile. <img src="images/BrowserCompile.png" style="display:block; width:400px;" /></p> 
+       <h2 id="Change">Change</h2> 
+       <p>Make a modification to the application then reload the changes in the browser by clicking on the Chrome refresh button.</p> 
+       <p>Instead of right clicking on the URL, double click to reopen Chrome with Javascript Debugger. <img src="images/DevModeViewDoubleClick.png" style="display:block; width:400px;" /></p> 
+       <h2 id="Compile">Compile</h2> 
+       <p>Compile by right clicking on the project and going to the GWT menus. </p> 
+       <p><img src="images/Compile.png" style="display:block; width:400px;" /></p> 
       </div> 
       <div class="tpl-content-lastUpdated">
         Last updated 

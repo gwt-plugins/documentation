@@ -5,7 +5,7 @@ Debugging a simple GWT Java project.
 Debug the web application by creating a launcher for it.
 This can be done by going to the GWT launcher shortcuts. 
 
-Start by reating a launcher for the applicaiton. Or reuse a previously created launcher.
+Start by creating a launcher for the applicaiton. Or reuse a previously created launcher.
 <img src="images/GwtDevelopmentModeWithJetty.png" style="display:block; width:400px;" />
 
 The Console view will log the CodeServer output. 

@@ -1,30 +1,39 @@
 # Maven
 The GWT Eclipse Plugin supports Maven integration. 
 
-## GWT Maven Plugin Support
-Two GWT Maven plugins are supported.
+## Reference
 
-* [Mojo GWT Maven Plugin](https://gwt-maven-plugin.github.io/gwt-maven-plugin/)
-* [TBroyer GWT Maven Plugin](https://tbroyer.github.io/gwt-maven-plugin/) * Recommended
+Plugins
 
-## Archetypes
-Create GWT Application quickly with Archetypes. 
+* [TBroyer GWT Maven Plugin](https://tbroyer.github.io/gwt-maven-plugin/) GWT Maven Plugin 2 * Recommended
+* [Mojo GWT Maven Plugin](https://gwt-maven-plugin.github.io/gwt-maven-plugin/) GWT Maven Plugin 1 * Deprecated
 
-### TBroyer GWT Maven Plugin
+Archetypes
 
 * [https://github.com/tbroyer/gwt-maven-archetypes/](https://github.com/tbroyer/gwt-maven-archetypes/)
 * [https://github.com/branflake2267/Archetypes](https://github.com/branflake2267/Archetypes)
 
+
+### TBroyer GWT Maven Plugin
+This plugin is recommended. 
+
 ### Mojo GWT Maven Plugin
-
-* [https://github.com/branflake2267/Archetypes](https://github.com/branflake2267/Archetypes)
-
-
-## Importing a Maven Application
-The GWT Eclipse Plugin will use m2e to configure the application on Maven project import. 
+This plugin is deprecated.
+And this documentation will not cover the use of this plugin. 
 
 
-## Updating Maven Configuration
-The GWT Eclipse Plugin will use m2e to configure the project if a Maven update is triggered.
+## Archetype Project Creation
+Create GWT Application quickly with Archetypes. 
 
- 
+### Single Module Configuration
+The GWT Maven Plugin TBroyer is best supported in multi module configuration. 
+But it can also be configured as a single module.   
+
+Creating a new project from this Archetype using [the GWT Basic Archetype](https://github.com/branflake2267/Archetypes).
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/xeanOpvrbBQ" frameborder="0" allowfullscreen></iframe>
+
+
+### Multi Module Configuration
+
+* [GWT Maven Plugin Archetypes](https://github.com/tbroyer/gwt-maven-archetypes/)

@@ -21,6 +21,7 @@ Uninstall the Google Plugin for Eclipse (GPE or GPE-Fork) before installing.
 There are three install options below. 
 The easiest option is to install from the Eclipse Market Place using either #1 or #2. 
 
+<iframe width="560" height="315" src="//www.youtube.com/embed/DU7ZQVLR5Zo" frameborder="0" allowfullscreen></iframe>
 
 ## 1. Use the Drag and Drop Install Button
 Drag and drop the `install` button into Eclipse.

@@ -3,6 +3,7 @@
   <toc>
     <entries>
       <entry name="Debugging" displayName="Standard Java Project"></entry>
+      <entry name="JavascriptDebugger" displayName="Javascript Debugger"></entry>
     </entries>
   </toc>
 </folder>

@@ -2,8 +2,9 @@
 <folder href="index">
   <toc>
     <entries>
-      <entry name="Debugging" displayName="Standard Java Project"></entry>
+      <entry name="Debugging" displayName="GWT Dev Mode &amp; Jetty"></entry>
       <entry name="JavascriptDebugger" displayName="Javascript Debugger"></entry>
+      <entry name="GWTDevModeAndSimpleWebServer" displayName="GWT Dev Mode &amp; Simple Web Server"></entry>
     </entries>
   </toc>
 </folder>

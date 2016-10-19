@@ -1,4 +1,4 @@
-#Debugging GWT Web Application
+#Debugging GWT Web Application with Jetty
 Debugging a simple GWT Java project.
 
 ## Debug

@@ -5,7 +5,7 @@
   <script type="text/javascript" src="../../gwtproject/gwtproject.nocache.js"></script> 
   <script type="text/javascript" src="../../ace/ace.js"></script> 
   <script type="text/javascript" src="../../prettify/prettify.js"></script> 
-  <title>Project Facets</title> 
+  <title>GWT Dev Mode &amp; Tomcat Web Server</title> 
   <meta charset="UTF-8" /> 
  </head> 
  <body> 
@@ -91,20 +91,19 @@
         Page Contents 
       </div> 
       <div id="tpl-content-name" itemprop="name">
-       <h1>Project Facets</h1>
+       <h1>GWT Development Mode with the Tomcat Web Server</h1>
       </div> 
       <div id="tpl-content-articleBody" itemprop="articleBody">  
-       <p>Eclipse Project facets are used to give Projects different behaviors.</p> 
-       <h2>GWT Facet</h2> 
-       <p>The GWT facet enables GWT to be used with Eclipse WTP Server Runtimes.</p> 
-       <p><img src="images/gwtfacet.png" /></p> 
-       <p>The project has facet settings that can be set in <code>Project &gt; Properties &gt; GWT &gt; Facet Settings</code>. </p> 
-       <p><img src="images/gwtfacet-projectsettings.png" /> </p> 
+       <p>This covers running <code>GWT Development Mode</code> with the CodeServer entrypoint (a.k.a Super Dev Mode).</p> 
        <ul> 
-        <li>Sync the Code Server Running with the Web Server - This automatically will launch the SDM code server when the server runtime is started.</li> 
+        <li>The difference between this launcher and the others is it does not run a web server. A web server has to be used when dubgging on the browser.</li> 
        </ul> 
-       <h2>Dynamic Web Mode</h2> 
-       <p>The Dynamic Web Module provides the ability to run the application with a server runtime like Tomcat or App Engine.</p> 
+       <h2>Archetype Used</h2> 
+       <ul> 
+        <li><a href="https://github.com/tbroyer/gwt-maven-archetypes">Modular WebApp Archetype was used for this Demo</a></li> 
+       </ul> 
+       <h2>Getting Started</h2> 
+       <p>Using it is best described in this video. <iframe width="560" height="315" src="//www.youtube.com/embed/-_YcBeI_Feo" frameborder="0" allowfullscreen=""></iframe></p> 
       </div> 
       <div class="tpl-content-lastUpdated">
         Last updated 

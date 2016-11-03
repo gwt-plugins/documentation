@@ -4,7 +4,7 @@ This covers using Tomcat as a Eclipse WTP Server runtime to host the application
 ## Reference
 
 * [Find out how to install the Tomcat WTP Server Adapter](http://www.vogella.com/tutorials/EclipseWTP/article.html)
-
+* [Tomcat Maven Archetypes](https://github.com/tbroyer/gwt-maven-archetypes/)
 
 ## Maven
 Setting up maven with a Tomcat dependency.
@@ -22,28 +22,22 @@ Setting up maven with a Tomcat dependency.
 		</plugin>
 
 
-## Project
+## Create project
+Create a multi module webapp from a Maven archetype.  
 
-* [Example Project](https://github.com/branflake2267/Archetypes/tree/master/archetypes/gwt-basic-rpc-tomcat)
+* [TBroyer Multi Module Webapp](https://github.com/tbroyer/gwt-maven-archetypes/)
 
-## Archetype
-Creating a project from a template with Tomcat. 
 
-* Example Archetype
+## Debugging
 
-		mvn archetype:generate -DarchetypeGroupId=com.github.branflake2267.archetypes \
-		-DarchetypeRepository=https://oss.sonatype.org/content/repositories/snapshots \
-		-DarchetypeArtifactId=gwt-basic-rpc-tomcat-archetype \
-		-DarchetypeVersion=1.0-SNAPSHOT \
-		-DgroupId=com.projectname.project \
-		-DartifactId=new-project-name \
-		-Dmodule=Project
+### Auto Configure GWT Development Mode
+The GWT Eclipse Plugin can automatically start GWT Development Mode.
 
-## Installing
+<iframe width="560" height="315" src="//www.youtube.com/embed/LtH4KzmguL0" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/6w87lVYT-MM" frameborder="0" allowfullscreen></iframe>
+### Manually Configure GWT Development Mode
+Manually Configuring the -launcherDir in the GWT Eclipse Plugin. Auto configure has now taken over. 
 
-## Launching
-Using and launching the Tomcat server runtime.
+<iframe width="560" height="315" src="//www.youtube.com/embed/-_YcBeI_Feo" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/d6xsX9x9WC4" frameborder="0" allowfullscreen></iframe>
+

@@ -4,8 +4,9 @@
     <entries>
       <entry name="Download" displayName="Download"></entry>
       <entry name="GettingStarted" displayName="Getting Started"></entry>
-      <entry name="devmodes/" displayName="Launchers"></entry>
+      <entry name="devmodes/" displayName="Dev Mode Launchers"></entry>
       <entry name="debugging/" displayName="Debugging"></entry>
+      <entry name="compiler/" displayName="Compiler"></entry>
       <entry name="maven/" displayName="Maven"></entry>
       <entry name="servers/" displayName="Servers"></entry>
       <entry name="workspace/" displayName="Workspace Tips"></entry>

@@ -3,9 +3,9 @@
   <toc>
     <entries>
       <entry name="Debugging" displayName="GWT Dev Mode &amp; Jetty"></entry>
-      <entry name="JavascriptDebugger" displayName="Javascript Debugger"></entry>
       <entry name="GWTDevModeAndSimpleWebServer" displayName="GWT Dev Mode &amp; Simple Web Server"></entry>
       <entry name="GWTDevModeAndTomcatWebServer" displayName="GWT Dev Mode &amp; Tomcat Web Server"></entry>
+      <entry name="JavascriptDebugger" displayName="Javascript Debugger"></entry>
     </entries>
   </toc>
 </folder>

@@ -51,20 +51,18 @@ Don't forget to become a Star Gazer by clicking on the like button!
 ## 3. Update Site
 Use the update site to install the features. 
 
-First goto Install New Software.
+First go to Install New Software.
 <img src="images/InstallNewSoftware.png" />
  
 Then add the update site and name it `GWT Eclipse Plugin`.
 <img src="images/UpdateSite.png" />
 
-Copy and paste this update repository url and paste it into the `Work with` in the Eclipse dialog and click enter. 
+Copy and paste this update repository URL and paste it into the `Work with` in the Eclipse dialog and click enter. 
 [http://storage.googleapis.com/gwt-eclipse-plugin/v3/release](http://storage.googleapis.com/gwt-eclipse-plugin/v3/release)
 
 
 
 ## Google Cloud Features
-If you're looking for the features like (GPE) Google Cloud features such as App Engine Integration, then you'll want to install the Google Cloud Tools Pluing.
-
-Goto [https://github.com/GoogleCloudPlatform/google-cloud-eclipse](https://github.com/GoogleCloudPlatform/google-cloud-eclipse)
+If you're looking for Google Cloud features such as App Engine Integration, then you'll want to install [Google Cloud Tools for Eclipse](https://cloud.google.com/eclipse).
 
 

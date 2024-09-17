@@ -8,7 +8,7 @@
 
 ## Testing
 
-* `run mvn package` to build site
+* run `mvn package` to build site
 * `mvn jetty:run`
 * goto: http://0.0.0.0:8080/
 

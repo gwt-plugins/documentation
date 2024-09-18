@@ -1,5 +1,5 @@
 # Getting Started with IntelliJ 
-This covers getting sarted with using the GWT IntelliJ Plugin to debug GWT application.
+This covers getting started with using the GWT IntelliJ Plugin to debug GWT application.
 
 
 ## Reference

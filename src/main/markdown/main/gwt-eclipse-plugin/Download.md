@@ -7,8 +7,8 @@ The available GWT Eclipse Plugin features.
 * GWT Eclipse Plugin - Required
 * GWT 2.8.0 SDK - Optional
 * GWT 2.9.0 SDK - Optional
-* GWT 2.10.0 SDK - Optional
-* JavaScript Debugger with Source Mapping Support - Optional and Recommended
+* GWT 2.10.1 SDK - Optional
+* GWT 2.11.0 SDK - Optional
 
 ### Plugin Feature Conflicts
 Uninstall the Google Plugin for Eclipse (GPE or GPE-Fork) before installing.
@@ -54,6 +54,6 @@ Then add the update site and name it `GWT Eclipse Plugin`.
 <img src="images/UpdateSite.png" />
 
 Copy and paste this update repository URL and paste it into the `Work with` in the Eclipse dialog and click enter. 
-[https://plugins.gwtproject.org/eclipse/gwt-eclipse-plugin/4.0.0/](https://plugins.gwtproject.org/eclipse/gwt-eclipse-plugin/4.0.0/)
+[https://plugins.gwtproject.org/eclipse/gwt-eclipse-plugin/4.1.0/](https://plugins.gwtproject.org/eclipse/gwt-eclipse-plugin/4.1.0/)
 
 

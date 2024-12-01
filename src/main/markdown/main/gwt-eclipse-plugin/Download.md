@@ -9,6 +9,7 @@ The available GWT Eclipse Plugin features.
 * GWT 2.9.0 SDK - Optional
 * GWT 2.10.1 SDK - Optional
 * GWT 2.11.0 SDK - Optional
+* GWT 2.12.1 SDK - Optional
 
 ### Plugin Feature Conflicts
 Uninstall the Google Plugin for Eclipse (GPE or GPE-Fork) before installing.
@@ -40,10 +41,6 @@ Then Search for `GWT` and install the features.
 Then Choose all the features you want to install.
 <img src="images/MarketPlaceFeatures.png" />
 
-Don't forget to become a Star Gazer by clicking on the like button!
-<img src="images/StarGazer.png" />
-
-
 ## 3. Update Site
 Use the update site to install the features. 
 
@@ -54,6 +51,6 @@ Then add the update site and name it `GWT Eclipse Plugin`.
 <img src="images/UpdateSite.png" />
 
 Copy and paste this update repository URL and paste it into the `Work with` in the Eclipse dialog and click enter. 
-[https://plugins.gwtproject.org/eclipse/gwt-eclipse-plugin/4.1.0/](https://plugins.gwtproject.org/eclipse/gwt-eclipse-plugin/4.1.0/)
+[https://plugins.gwtproject.org/eclipse/site/latest/](https://plugins.gwtproject.org/eclipse/site/latest/)
 
 

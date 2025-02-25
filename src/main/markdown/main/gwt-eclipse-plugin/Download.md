@@ -6,9 +6,12 @@ The available GWT Eclipse Plugin features.
 
 * GWT Eclipse Plugin - Required
 * GWT 2.8.0 SDK - Optional
+* GWT 2.8.2 SDK - Optional
 * GWT 2.9.0 SDK - Optional
+* GWT 2.10.0 SDK - Optional
 * GWT 2.10.1 SDK - Optional
 * GWT 2.11.0 SDK - Optional
+* GWT 2.12.0 SDK - Optional
 * GWT 2.12.1 SDK - Optional
 
 ### Plugin Feature Conflicts

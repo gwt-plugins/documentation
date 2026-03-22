@@ -13,6 +13,8 @@ The available GWT Eclipse Plugin features.
 * GWT 2.11.0 SDK - Optional
 * GWT 2.12.0 SDK - Optional
 * GWT 2.12.1 SDK - Optional
+* GWT 2.12.2 SDK - Optional
+* GWT 2.13.0 SDK - Optional
 
 ### Plugin Feature Conflicts
 Uninstall the Google Plugin for Eclipse (GPE or GPE-Fork) before installing.
